@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ziZxu8nh+RJ8qrnZaZk3MfoOGIxFuE3wAe6J69oCpFmS/jk1HErqGONJIm0BavshcdKj8dISqqDx6qi+7sfn4g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\husey\\Desktop\\5\\BrightAkademi\\BrightAkademi.Shared\\BrightAkademi.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\husey\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\husey\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\husey\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

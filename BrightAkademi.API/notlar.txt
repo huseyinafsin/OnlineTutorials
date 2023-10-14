@@ -1,0 +1,3 @@
+dotnet ef migrations add akademiwebDb --startup-project ../BrightAkademi.API
+
+dotnet ef database update --startup-project ../BrightAkademi.API
