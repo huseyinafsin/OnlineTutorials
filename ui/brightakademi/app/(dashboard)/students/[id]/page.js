@@ -5,7 +5,6 @@ import { toast } from 'react-toastify';
 import { Modal, Button } from "react-bootstrap";    
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
-
 export default function Home() {
 
   const [isLoaded, setIsLoaded] = useState(false);
@@ -284,7 +283,7 @@ export default function Home() {
                     </tr>
                   </tfoot>
                 </table>
-                : <h4> Kurs bulunmadı, yeni birtane eklyin</h4>
+                : <h4> Kurs bulunmadı, yeni birtane ekleyin</h4>
                 }
                 
               </div>

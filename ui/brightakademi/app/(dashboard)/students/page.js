@@ -7,7 +7,6 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
-
   const [hasError, setHasError] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
@@ -423,7 +422,7 @@ export default function Home() {
                       </tr>
                     </tfoot>
                   </table>
-                    : <h4> Öğrenci bulunmadı, yeni birtane eklyin</h4>
+                    : <h4> Öğrenci bulunmadı, yeni birtane ekleyin</h4>
                 }
 
               </div>

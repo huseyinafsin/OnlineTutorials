@@ -14,7 +14,7 @@ function Footer() {
                   {/* logo */}
                   <div className="footer-logo mb-25">
                     <a href="index.html">
-                      <img src="assets/img/logo/logo2_footer.png" alt="" />
+                    <img src="assets/img/logo/logo.png" alt="" />
                     </a>
                   </div>
                   <div className="footer-tittle">

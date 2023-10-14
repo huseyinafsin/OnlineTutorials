@@ -36,6 +36,7 @@ namespace BrightWeb.Entity.Concrete
         public Teacher Teacher { get; set; }
 
         public List<CourseStudent>? CourseStudents { get; set; }
+        public List<TeacherCourse>? TeacherCourses { get; set; }
 
     }
 }

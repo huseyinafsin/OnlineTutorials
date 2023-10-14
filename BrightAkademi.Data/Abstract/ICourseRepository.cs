@@ -7,6 +7,7 @@ namespace BrightAkademi.Data.Abstract
     {
         Task<bool> AnyAsync(int id);
         Task<List<Course>> GetByStudentIdAsync(int studentId);
-        Task GetByTeacherId(int teacherId);
+        Task<List<Course>> GetByTeacherId(int teacherId);
+        Task<List<Course>> GetCoursesWithDetail(int? categoryId);
     }
 }

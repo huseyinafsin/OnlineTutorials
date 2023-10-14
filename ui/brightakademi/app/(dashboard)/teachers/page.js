@@ -505,7 +505,7 @@ export default function Home() {
                     </tr>
                   </tfoot>
                 </table>
-                : <h4> Öğretmen bulunmadı, yeni birtane eklyin</h4>
+                : <h4> Öğretmen bulunmadı, yeni birtane ekleyin</h4>
                 }
                 
               </div>

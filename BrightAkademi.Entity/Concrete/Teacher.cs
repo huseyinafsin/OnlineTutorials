@@ -19,5 +19,6 @@ namespace BrightAkademi.Entity.Concrete
         public DateTime ModifiedDate { get; set; } = DateTime.Now;
         public User User { get; set; }
         public List<Course>? Courses { get; set; }
+
     }
 }

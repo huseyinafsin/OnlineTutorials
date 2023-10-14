@@ -125,7 +125,8 @@ export default function Home() {
   }
   const handleUpdate = () => {
     var obj = JSON.stringify(item);
-    fetch(`${process.env.API_URL}/companies`,
+    try{
+   const response = fetch(`${process.env.API_URL}/companies`,
       {
         method: 'PUT',
         body: obj,
@@ -133,28 +134,32 @@ export default function Home() {
           'content-type': 'application/json',
           Authorization: tokenStr
         }),
-      })
-      .then((res) => {
-        if (!res.ok) { throw new Error("unauthorized") }
-        return res.json();
-      })
-      .then(
-        (result) => {
-          if (result.errors == null)
-            toast("Şirket Kaydedildi");
-          else
-            toast.error(result.title);
-        }).catch((e) => {
-          toast.error("Yetkiniz yok")
-         setHasError(true)
+      }).then(res=> {return res.json()});
+      console.log("res:"+response.status)
+      // .then((res) => {
+      //   if (!res.ok) { throw new Error("unauthorized") }
+      //   return res.json();
+      // })
+      // .then(
+      //   (result) => {
+      //     if (result.errors == null)
+      //       toast("Şirket Kaydedildi");
+      //     else
+      //       toast.error(result.title);
+      //   }).catch((e) => {
+      //     toast.error("Yetkiniz yok")
+      //    setHasError(true)
 
-        })
-      .finally(f => {
-        handleCloseUpdateModal()
-        setItem({})
-        setIsLoaded(true);
-      }
-      )
+      //   })
+      // .finally(f => {
+      //   handleCloseUpdateModal()
+      //   setItem({})
+      //   setIsLoaded(true);
+      // }
+      // )
+    }catch(e){
+      console.log("error:"+e)
+    }
       setRefresh(refresh+1)
   }
 

@@ -24,6 +24,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Contexts
         public DbSet<Student> Students { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<UserRole> UserRoles { get; set; }
+        public DbSet<TeacherCourse> TeacherCourses { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -37,6 +38,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Contexts
             modelBuilder.ApplyConfiguration(new StudentConfig());
             modelBuilder.ApplyConfiguration(new UserConfig());
             modelBuilder.ApplyConfiguration(new RoleConfig());
+            modelBuilder.ApplyConfiguration(new TeacherCourseConfig());
 
             modelBuilder.Entity<User>().HasQueryFilter(x => x.IsDeleted == false);
             modelBuilder.Entity<Category>().HasQueryFilter(x => x.IsDeleted == false);

@@ -6,13 +6,16 @@ import { ToastContainer } from 'react-toastify';
 import Footer from './footer';
 import Navbar from './navbar';
 import Link from 'next/link';
+import  useTokenExpirationCheck from '@/app/hooks/useTokenExpirationCheck'
 
 
 export default function DashboardLayout({ children }) {
+  useTokenExpirationCheck()
   const [isLoaded, setIsLoaded] = useState(true)
-  const [token, setToken] = useState("");
-  const [hasError, setHasError] = useState(null);
-  const username = JSON.parse(localStorage.getItem('access'))?.username;
+  const access = JSON.parse(localStorage.getItem('access'));
+  const username = access?.username;
+
+
   return (
     <>
       <html>

@@ -2,7 +2,6 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
-
 export default function Home() {
     const [item, setItem] = useState({})
     const [categories, setCategories] = useState([])

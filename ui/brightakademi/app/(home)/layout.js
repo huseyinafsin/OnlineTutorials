@@ -1,9 +1,11 @@
+"use client"
 import React from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
 import { ToastContainer } from 'react-toastify'
-
+import useTokenExpirationCheck from '@/app/hooks/useTokenExpirationCheck'
 function HomeLayout({children}) {
+  useTokenExpirationCheck()
   return (
 <html>
 <head>
@@ -12,7 +14,6 @@ function HomeLayout({children}) {
   <title>Courses | Education</title>
   <meta name="description" content="" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="manifest" href="site.webmanifest" />
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
   {/* CSS here */}
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -31,19 +32,7 @@ function HomeLayout({children}) {
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    
-  {/* ? Preloader Start */}
-  {/* <div id="preloader-active">
-    <div className="preloader d-flex align-items-center justify-content-center">
-      <div className="preloader-inner position-relative">
-        <div className="preloader-circle" />
-        <div className="preloader-img pere-text">
-          <img src="assets/img/logo/loder.png" alt="" />
-        </div>
-      </div>
-    </div>
-  </div> */}
-  {/* Preloader Start */}
+  
     <Navbar/>
     <ToastContainer />
     {children}
@@ -51,7 +40,6 @@ function HomeLayout({children}) {
   {/* Scroll Up */}
   <div id="back-top">
     <a title="Go to Top" href="#">
-      {" "}
       <i className="fas fa-level-up-alt" />
     </a>
   </div>

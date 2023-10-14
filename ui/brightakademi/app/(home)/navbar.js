@@ -1,7 +1,14 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
 
 function Navbar() {
+  const [isLoggedIn, setIsLoggedIn]= useState(false);
+  const username = JSON.parse(localStorage.getItem('access'))?.username;
+  
+  useEffect(()=>{
+    username? setIsLoggedIn(true):setIsLoggedIn(false)
+  })
   return (
     <header>
     {/* Header Start */}
@@ -34,20 +41,20 @@ function Navbar() {
                         <Link href="/about">Hakkında</Link>
                         </li>
                         <li>
-                        <Link href="/">Blog</Link>
+                        <Link href="/category">Kategoriler</Link>
                         </li>
                         <li>
                         <Link href="/contact">İletişim</Link>
                         </li>
                         {/* Button */}
                         <li className="button-header margin-left ">
-                          <Link href="/course" className={"btn"}>
+                          {!isLoggedIn?<Link href="/course" className={"btn"}>
                             Katıl
-                          </Link>
+                          </Link> :""}
                         </li>
-                        <li className="button-header">
+                        <li className="button-header rounded">
                           <Link href="login" className={"btn btn3"}>
-                            Giriş Yap
+                          {isLoggedIn?<><i className="fas fa-user-circle"></i> {username}</> : <>Giriş Yap</>} 
                           </Link>
                         </li>
                       </ul>

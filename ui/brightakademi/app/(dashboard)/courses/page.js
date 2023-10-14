@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { Modal, Button } from "react-bootstrap";
 import Link from 'next/link';
-
 export default function Home() {
 
   const [refresh, setRefresh] = useState(1);
@@ -21,22 +20,6 @@ export default function Home() {
     description: ''
   })
 
-  const notify = (message, type) => {
-    switch (type) {
-      case "success":
-        toast.success(message);
-        break;
-      case "error":
-        toast.error(message);
-        break;
-      case "info":
-        toast.info(message)
-        break;
-      default:
-        toast(message);
-        break;
-    }
-  }
 
   useEffect(() => {
     fetch(`${process.env.API_URL}/courses`, {
@@ -295,7 +278,7 @@ export default function Home() {
                     </tr>
                   </tfoot>
                 </table>
-                : <h4> Kurs bulunmadı, yeni birtane eklyin</h4>
+                : <h4> Kurs bulunmadı, yeni birtane ekleyin</h4>
                 }
                 
               </div>

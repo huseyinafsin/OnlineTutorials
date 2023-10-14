@@ -27,7 +27,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new Role
                 {
                     Id = 3,
-                    Name= "Trainees",
+                    Name= "Trainer",
                     IsActive = true,
                 },        
                 new Role

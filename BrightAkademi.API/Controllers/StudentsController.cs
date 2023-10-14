@@ -19,7 +19,7 @@ namespace BrightAkademi.API.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "Super Admin,Admin,Trainers")]
+        [Authorize(Roles = "Super Admin,Admin,Trainer")]
         public async Task<IActionResult> GetStudents()
         {
             var response = await _studentManager.GetAllAsync();
@@ -34,6 +34,19 @@ namespace BrightAkademi.API.Controllers
         public async Task<IActionResult> GetByIdStudent(int id)
         {
             var response = await _studentManager.GetByIdAsync(id);
+            if (response.IsSucceeded)
+            {
+                //var jsonResult = JsonSerializer.Serialize(response);
+                return Ok(response);
+            }
+            return NotFound();
+        }      
+        
+        [HttpGet("getByCourseId/{id}")]
+        [Authorize(Roles ="Trainer")]
+        public async Task<IActionResult> GetByCourseId(int id)
+            {
+            var response = await _studentManager.GetByCourseIdAsync(id);
             if (response.IsSucceeded)
             {
                 //var jsonResult = JsonSerializer.Serialize(response);

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BrightAkademi.Business.Abstract;
 using BrightAkademi.Data.Abstract;
+using BrightAkademi.Entity.Concrete;
 using BrightAkademi.Shared.DTOs;
 using BrightAkademi.Shared.ResponseDTOs;
 using BrightWeb.Entity.Concrete;
@@ -108,6 +109,34 @@ namespace BrightAkademi.Business.Concrete
             try
             {
                 var courses = await _courseRepository.GetByStudentIdAsync(studentId);
+                var courseDtos = _mapper.Map<List<CourseDto>>(courses);
+                return Response<List<CourseDto>>.Success(courseDtos, 200);
+            }
+            catch (Exception ex)
+            {
+                return Response<List<CourseDto>>.Fail($"An error occurred: {ex.Message}", 500);
+            }
+        }
+
+        public async Task<Response<List<CourseDto>>> GetByTeacherId(int teacherId)
+        {
+            try
+            {
+                var courses = await _courseRepository.GetByTeacherId(teacherId);
+                var courseDtos = _mapper.Map<List<CourseDto>>(courses);
+                return Response<List<CourseDto>>.Success(courseDtos, 200);
+            }
+            catch (Exception ex)
+            {
+                return Response<List<CourseDto>>.Fail($"An error occurred: {ex.Message}", 500);
+            }
+        }
+
+        public async Task<Response<List<CourseDto>>> GetCoursesWithDetail(int? categoryId)
+        {
+            try
+            {
+                var courses = await _courseRepository.GetCoursesWithDetail(categoryId);
                 var courseDtos = _mapper.Map<List<CourseDto>>(courses);
                 return Response<List<CourseDto>>.Success(courseDtos, 200);
             }

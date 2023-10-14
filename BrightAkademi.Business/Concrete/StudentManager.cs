@@ -52,6 +52,17 @@ namespace BrightAkademi.Business.Concrete
             return Response<List<StudentDto>>.Success(studentDtoList, 200);
         }
 
+        public async Task<Response<List<StudentDto>>> GetByCourseIdAsync(int courseId)
+        {
+            var students = await _studentRepository.GetByCourseIdAsync(courseId);
+            if (students == null)
+            {
+                return Response<List<StudentDto>>.Fail("Böyle bir öğrenci yok!", 301);
+            }
+            var studentDto = _mapper.Map<List<StudentDto>>(students);
+            return Response<List<StudentDto>>.Success(studentDto, 200);
+        }
+
         public async Task<Response<StudentDto>> GetByIdAsync(int id)
         {
             var student = await _studentRepository.GetByIdAsync(id);
@@ -86,5 +97,7 @@ namespace BrightAkademi.Business.Concrete
             }
             return Response<NoContent>.Fail("Böyle bir öğrenci bulunamadı", 401);
         }
+
+
     }
 }

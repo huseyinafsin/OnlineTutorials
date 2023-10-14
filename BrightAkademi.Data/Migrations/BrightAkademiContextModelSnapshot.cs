@@ -57,66 +57,66 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6016),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5827),
                             Description = "Kategorisi silinenleri buraya atacağız",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6019),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5830),
                             Name = "Genel",
                             Url = "genel"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6023),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5834),
                             Description = "Full Stack Web Developer",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6023),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5834),
                             Name = "Full Stack Web Developer",
                             Url = "full-stack-web-developer"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6025),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5836),
                             Description = "IOS Developer",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6025),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5836),
                             Name = "IOS Developer",
                             Url = "ios-developer"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6026),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5837),
                             Description = "BackEnd Developer",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6027),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5838),
                             Name = "BackEnd Developer",
                             Url = "backend-developer"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6028),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5839),
                             Description = "FrontEnd Developer",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6029),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5839),
                             Name = "FrontEnd Developer",
                             Url = "frontend-developer"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6030),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5841),
                             Description = "Java Developer",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6030),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(5841),
                             Name = "Java Developer",
                             Url = "java-developer"
                         });
@@ -168,12 +168,12 @@ namespace BrightAkademi.Data.Migrations
                             Id = 1,
                             About = "Yazılım eğitimi veren ana kucağı",
                             Address = "Kuloğlu Mh., Barbaros Blv. Yıldız İş Hanı No:9, 34353 Beşiktaş/İstanbul",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6796),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(6542),
                             Email = "info.wissenakademie.com",
                             FAQ = "Bilgim olmalı mı ? Eğitim durumum ne olmalı ?.",
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(6797),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(6545),
                             Name = "Wissen Akademie",
                             PhoneNumber = "1234567890"
                         });
@@ -375,28 +375,28 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8069),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8011),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8071),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8014),
                             Name = "Easy"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8074),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8016),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8074),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8017),
                             Name = "Medium"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8076),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8018),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8076),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8018),
                             Name = "Senior"
                         });
                 });
@@ -431,37 +431,37 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5697),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5679),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5699),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5681),
                             Name = "Super Admin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5702),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5685),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5702),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5685),
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5703),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5687),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5704),
-                            Name = "Trainees"
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5687),
+                            Name = "Trainer"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5705),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5688),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5706),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(5689),
                             Name = "Trainee"
                         });
                 });
@@ -506,121 +506,121 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4188),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2475),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Eyşan",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Atay",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4196),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2490),
                             UserId = 8
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4200),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2497),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Ali",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Kırgız",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4200),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2498),
                             UserId = 9
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4202),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2499),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Teyfik",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Zaim",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4202),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2500),
                             UserId = 10
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4206),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2501),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Hayratlı",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Eskikabadayı",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4207),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2502),
                             UserId = 11
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4208),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2503),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Cengiz",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Atay",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4208),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2504),
                             UserId = 12
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4210),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2505),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Bade",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Garson",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4210),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2505),
                             UserId = 13
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4212),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2507),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Şebnem",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Sertuna",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4212),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2507),
                             UserId = 14
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4214),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2508),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Temmuz",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Kocaoğlu",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4214),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2509),
                             UserId = 15
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4215),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2510),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Bahar",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Tezcan",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4216),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2510),
                             UserId = 16
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4217),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2512),
                             EducationalStatus = "Kayıtlı öğrenci başlayacak.",
                             FirstName = "Azad",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Karaeski",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4218),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(2512),
                             UserId = 17
                         });
                 });
@@ -675,14 +675,14 @@ namespace BrightAkademi.Data.Migrations
                         {
                             Id = 1,
                             Comment = "10 puan",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7429),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7270),
                             EducationInfo = "Zonguldak Bilgisayar Öğretmenliği",
                             Experience = "30",
                             FirstName = "Ramiz",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Karaeski",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7430),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7273),
                             Profession = "Full Stack Web Developer",
                             UserId = 3
                         },
@@ -690,14 +690,14 @@ namespace BrightAkademi.Data.Migrations
                         {
                             Id = 2,
                             Comment = "10 puan",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7436),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7280),
                             EducationInfo = "Eskişehir Bilgisayar Mühendisliği",
                             Experience = "10",
                             FirstName = "Kenan",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Birkan",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7437),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7280),
                             Profession = "IOS Developer",
                             UserId = 4
                         },
@@ -705,14 +705,14 @@ namespace BrightAkademi.Data.Migrations
                         {
                             Id = 3,
                             Comment = "10 puan",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7440),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7283),
                             EducationInfo = "Bahçeşehir Üniversitesi Yazılım Mühendisliği",
                             Experience = "2",
                             FirstName = "Ezel",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Bayraktar",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7440),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7283),
                             Profession = "Backend Developer",
                             UserId = 5
                         },
@@ -720,14 +720,14 @@ namespace BrightAkademi.Data.Migrations
                         {
                             Id = 4,
                             Comment = "10 puan",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7443),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7285),
                             EducationInfo = "Arel Üniversitesi Elektronik Haberleşme Mühendisliği",
                             Experience = "2",
                             FirstName = "Serdar",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Tezcan",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7443),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7285),
                             Profession = "Frontend Developer",
                             UserId = 6
                         },
@@ -735,16 +735,198 @@ namespace BrightAkademi.Data.Migrations
                         {
                             Id = 5,
                             Comment = "10 puan",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7445),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7287),
                             EducationInfo = "Doğuş Üniversitesi",
                             Experience = "2",
                             FirstName = "Selma",
                             IsActive = true,
                             IsDeleted = false,
                             LastName = "Hünel",
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(7446),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(7288),
                             Profession = "Java Developer",
                             UserId = 7
+                        });
+                });
+
+            modelBuilder.Entity("BrightAkademi.Entity.Concrete.TeacherCourse", b =>
+                {
+                    b.Property<int>("CourseId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("TeacherId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("Id")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("ModifiedDate")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("CourseId", "TeacherId");
+
+                    b.HasIndex("TeacherId");
+
+                    b.ToTable("TeacherCourses");
+
+                    b.HasData(
+                        new
+                        {
+                            CourseId = 1,
+                            TeacherId = 1,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9202),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9207)
+                        },
+                        new
+                        {
+                            CourseId = 2,
+                            TeacherId = 1,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9209),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9210)
+                        },
+                        new
+                        {
+                            CourseId = 3,
+                            TeacherId = 1,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9211),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9211)
+                        },
+                        new
+                        {
+                            CourseId = 4,
+                            TeacherId = 2,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9212),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9213)
+                        },
+                        new
+                        {
+                            CourseId = 5,
+                            TeacherId = 2,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9214),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9214)
+                        },
+                        new
+                        {
+                            CourseId = 6,
+                            TeacherId = 2,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9215),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9215)
+                        },
+                        new
+                        {
+                            CourseId = 7,
+                            TeacherId = 3,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9216),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9217)
+                        },
+                        new
+                        {
+                            CourseId = 8,
+                            TeacherId = 3,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9266),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9266)
+                        },
+                        new
+                        {
+                            CourseId = 9,
+                            TeacherId = 3,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9268),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9268)
+                        },
+                        new
+                        {
+                            CourseId = 10,
+                            TeacherId = 4,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9269),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9270)
+                        },
+                        new
+                        {
+                            CourseId = 11,
+                            TeacherId = 4,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9271),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9271)
+                        },
+                        new
+                        {
+                            CourseId = 12,
+                            TeacherId = 4,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9272),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9272)
+                        },
+                        new
+                        {
+                            CourseId = 13,
+                            TeacherId = 5,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9273),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9274)
+                        },
+                        new
+                        {
+                            CourseId = 14,
+                            TeacherId = 5,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9274),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9275)
+                        },
+                        new
+                        {
+                            CourseId = 15,
+                            TeacherId = 5,
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9276),
+                            Id = 0,
+                            IsActive = true,
+                            IsDeleted = false,
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(9276)
                         });
                 });
 
@@ -782,170 +964,170 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4977),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4753),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4979),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4758),
                             Password = "superadmin",
                             Username = "superadmin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4982),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4761),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4983),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4762),
                             Password = "admin",
                             Username = "admin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4984),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4763),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4985),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4764),
                             Password = "ramizkaraeski",
                             Username = "ramizkaraeski"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4986),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4765),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4986),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4766),
                             Password = "kenanbirkan",
                             Username = "kenanbirkan"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4988),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4767),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4988),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4767),
                             Password = "ezelbayraktar",
                             Username = "ezelbayraktar"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4989),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4769),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4990),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4769),
                             Password = "serdartezcan",
                             Username = "serdartezcan"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4991),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4770),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4991),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4771),
                             Password = "selmahunel",
                             Username = "selmahunel"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4992),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4772),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4993),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4773),
                             Password = "eysanatay",
                             Username = "eysanatay"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4994),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4774),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4994),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4774),
                             Password = "alikizgin",
                             Username = "alikizgin"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4996),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4776),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4996),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4776),
                             Password = "teyfikzaim",
                             Username = "teyfikzaim"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4997),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4777),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4998),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4778),
                             Password = "hayratlieskikabadayi",
                             Username = "hayratlieskikabadayi"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4999),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4779),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(4999),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4780),
                             Password = "cengizatay",
                             Username = "cengizatay"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5000),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4781),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5001),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4781),
                             Password = "badegarson",
                             Username = "badegarson"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5002),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4783),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5002),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4783),
                             Password = "sebnemsertuna",
                             Username = "sebnemsertuna"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5003),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4784),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5004),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4785),
                             Password = "temmuzkocaoglu",
                             Username = "temmuzkocaoglu"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5005),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4786),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5005),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4787),
                             Password = "bahartezcan",
                             Username = "bahartezcan"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5007),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4788),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 425, DateTimeKind.Local).AddTicks(5007),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 68, DateTimeKind.Local).AddTicks(4788),
                             Password = "azadkaraeski",
                             Username = "azadkaraeski"
                         });
@@ -987,170 +1169,170 @@ namespace BrightAkademi.Data.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4311),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4140),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4325),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4151),
                             RoleId = 1,
                             UserId = 1
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4328),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4155),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4329),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4155),
                             RoleId = 2,
                             UserId = 2
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4330),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4157),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4330),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4157),
                             RoleId = 3,
                             UserId = 3
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4332),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4158),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4332),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4159),
                             RoleId = 3,
                             UserId = 4
                         },
                         new
                         {
                             Id = 5,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4333),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4160),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4334),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4161),
                             RoleId = 3,
                             UserId = 5
                         },
                         new
                         {
                             Id = 6,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4335),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4162),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4335),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4162),
                             RoleId = 3,
                             UserId = 6
                         },
                         new
                         {
                             Id = 7,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4336),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4163),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4337),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4164),
                             RoleId = 3,
                             UserId = 7
                         },
                         new
                         {
                             Id = 8,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4338),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4165),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4338),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4166),
                             RoleId = 4,
                             UserId = 8
                         },
                         new
                         {
                             Id = 9,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4339),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4167),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4340),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4167),
                             RoleId = 4,
                             UserId = 9
                         },
                         new
                         {
                             Id = 10,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4341),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4168),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4341),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4169),
                             RoleId = 4,
                             UserId = 10
                         },
                         new
                         {
                             Id = 11,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4343),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4170),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4343),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4170),
                             RoleId = 4,
                             UserId = 11
                         },
                         new
                         {
                             Id = 12,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4345),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4171),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4345),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4172),
                             RoleId = 4,
                             UserId = 12
                         },
                         new
                         {
                             Id = 13,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4346),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4173),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4347),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4173),
                             RoleId = 4,
                             UserId = 13
                         },
                         new
                         {
                             Id = 14,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4348),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4174),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4348),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4175),
                             RoleId = 4,
                             UserId = 14
                         },
                         new
                         {
                             Id = 15,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4349),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4176),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4350),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4176),
                             RoleId = 4,
                             UserId = 15
                         },
                         new
                         {
                             Id = 16,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4351),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4178),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4351),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4178),
                             RoleId = 4,
                             UserId = 16
                         },
                         new
                         {
                             Id = 17,
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4352),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4179),
                             IsActive = true,
                             IsDeleted = false,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(4353),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 65, DateTimeKind.Local).AddTicks(4180),
                             RoleId = 4,
                             UserId = 17
                         });
@@ -1243,7 +1425,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap react react native c# .net javascript node.js ajax",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8900),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8666),
                             Description = "Full Stack Developer eğitimi kapsamlı bir eğitim.",
                             Experience = "Bu eğitim sayesinde;Temel ve ileri veritabanı mantığını, Web’in ve yazılımın çalışma prensibini ve tüm süreçlerini, Yeni nesil tüm programlama araç ve dillerini, Back end programlamayı ve API yazmayı, Uçtan uca bir proje geliştirmeyi öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1251,7 +1433,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 1,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8903),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8668),
                             Name = "Full Stack Web Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1267,7 +1449,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap react react native c# .net javascript node.js ajax",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8924),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8684),
                             Description = "Full Stack Developer eğitimi kapsamlı bir eğitim.",
                             Experience = "Bu eğitim sayesinde;Temel ve ileri veritabanı mantığını, Web’in ve yazılımın çalışma prensibini ve tüm süreçlerini, Yeni nesil tüm programlama araç ve dillerini, Back end programlamayı ve API yazmayı, Uçtan uca bir proje geliştirmeyi öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1275,7 +1457,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 2,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8924),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8685),
                             Name = "Full Stack Web Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1291,7 +1473,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap react react native c# .net javascript node.js ajax",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8930),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8689),
                             Description = "Full Stack Developer eğitimi kapsamlı bir eğitim.",
                             Experience = "Bu eğitim sayesinde;Temel ve ileri veritabanı mantığını, Web’in ve yazılımın çalışma prensibini ve tüm süreçlerini, Yeni nesil tüm programlama araç ve dillerini, Back end programlamayı ve API yazmayı, Uçtan uca bir proje geliştirmeyi öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1299,7 +1481,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 3,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8930),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8690),
                             Name = "Full Stack Web Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1315,7 +1497,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Swift",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8934),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8694),
                             Description = "IOS Developer",
                             Experience = "Bu eğitimde IOS Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak swift programını öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1323,7 +1505,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 1,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8935),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8694),
                             Name = "IOS Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1339,7 +1521,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Swift",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8940),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8699),
                             Description = "IOS Developer",
                             Experience = "Bu eğitimde IOS Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak swift programını öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1347,7 +1529,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 2,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8941),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8700),
                             Name = "IOS Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1363,7 +1545,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Swift",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8946),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8704),
                             Description = "IOS Developer",
                             Experience = "Bu eğitimde IOS Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak swift programını öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1371,7 +1553,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 3,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8946),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8704),
                             Name = "IOS Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1387,7 +1569,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "c# .net javascript node.js ajax ",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8950),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8756),
                             Description = "Backend Developer",
                             Experience = "Bu eğitimde Backend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1395,7 +1577,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 1,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8951),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8757),
                             Name = "Backend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1411,7 +1593,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "c# .net javascript node.js ajax ",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8957),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8762),
                             Description = "Backend Developer",
                             Experience = "Bu eğitimde Backend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1419,7 +1601,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 2,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8958),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8762),
                             Name = "Backend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1435,7 +1617,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "c# .net javascript node.js ajax ",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8963),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8768),
                             Description = "Backend Developer",
                             Experience = "Bu eğitimde Backend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1443,7 +1625,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 3,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8964),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8768),
                             Name = "Backend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1459,7 +1641,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap javascript react react native",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8969),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8772),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Frontend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1467,7 +1649,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 1,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8970),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8772),
                             Name = "Frontend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1483,7 +1665,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap javascript react react native",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8976),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8776),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Frontend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1491,7 +1673,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 2,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8976),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8777),
                             Name = "Frontend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1507,7 +1689,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "html css bootstrap javascript react react native",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8984),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8781),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Frontend Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1515,7 +1697,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 3,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8985),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8781),
                             Name = "Frontend Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1531,7 +1713,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Java",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8989),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8786),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Java Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1539,7 +1721,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 1,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8990),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8787),
                             Name = "Java Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1555,7 +1737,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Java",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8997),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8791),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Java Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1563,7 +1745,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 2,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(8997),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8791),
                             Name = "Java Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1579,7 +1761,7 @@ namespace BrightAkademi.Data.Migrations
                             Comment = "Çok iyi bir kurs 10 puan",
                             CompanyId = 1,
                             Content = "Java",
-                            CreatedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(9002),
+                            CreatedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8795),
                             Description = "Frontend Developer",
                             Experience = "Bu eğitimde Java Developer olmak adına seçeceğiniz eğitim seviyesine göre eğitim alacak gerekli programları öğreneceksiniz.",
                             FinishCourseTime = new DateTime(2024, 7, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1587,7 +1769,7 @@ namespace BrightAkademi.Data.Migrations
                             IsActive = false,
                             IsDeleted = false,
                             LevelId = 3,
-                            ModifiedDate = new DateTime(2023, 10, 12, 16, 33, 7, 423, DateTimeKind.Local).AddTicks(9003),
+                            ModifiedDate = new DateTime(2023, 10, 14, 14, 55, 6, 66, DateTimeKind.Local).AddTicks(8795),
                             Name = "Java Developer",
                             Price = 10000,
                             StartCourseTime = new DateTime(2024, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
@@ -1636,6 +1818,25 @@ namespace BrightAkademi.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("BrightAkademi.Entity.Concrete.TeacherCourse", b =>
+                {
+                    b.HasOne("BrightWeb.Entity.Concrete.Course", "Course")
+                        .WithMany("TeacherCourses")
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("BrightAkademi.Entity.Concrete.Teacher", "Teacher")
+                        .WithMany()
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("BrightAkademi.Entity.Concrete.UserRole", b =>
@@ -1712,6 +1913,8 @@ namespace BrightAkademi.Data.Migrations
             modelBuilder.Entity("BrightWeb.Entity.Concrete.Course", b =>
                 {
                     b.Navigation("CourseStudents");
+
+                    b.Navigation("TeacherCourses");
                 });
 #pragma warning restore 612, 618
         }

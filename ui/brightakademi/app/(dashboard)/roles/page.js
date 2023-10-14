@@ -4,9 +4,7 @@ import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { Modal, Button } from "react-bootstrap";
 import { useRouter } from 'next/navigation';
-
 export default function Home() {
-
   
   const [hasError, setHasError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -31,22 +29,6 @@ export default function Home() {
   const itemHandler = (e) => {
     const newValue = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
     setItem({ ...item, [e.target.name]: newValue })
-  }
-  const notify = (message, type) => {
-    switch (type) {
-      case "success":
-        toast.success(message);
-        break;
-      case "error":
-        toast.error(message);
-        break;
-      case "info":
-        toast.info(message)
-        break;
-      default:
-        toast(message);
-        break;
-    }
   }
 
   useEffect(() => {
@@ -377,7 +359,7 @@ export default function Home() {
                       </tr>
                     </tfoot>
                   </table>
-                    : <h4> Role bulunmadı, yeni birtane eklyin</h4>
+                    : <h4> Role bulunmadı, yeni birtane ekleyin</h4>
                 }
 
               </div>

@@ -11,5 +11,6 @@ namespace BrightAkademi.Business.Abstract
         Task<Response<StudentDto>> CreateAsync(StudentCreateDto studentCreateDto);
         Task<Response<NoContent>> UpdateAsync(StudentUpdateDto studentUpdateeDto);
         Task<Response<NoContent>> DeleteAsync(int id);
+        Task<Response<List<StudentDto>>> GetByCourseIdAsync(int courseId);
     }
 }

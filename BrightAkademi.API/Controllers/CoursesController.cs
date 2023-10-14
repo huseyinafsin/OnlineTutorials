@@ -17,12 +17,14 @@ namespace BrightAkademi.API.Controllers
         private readonly ICourseService _courseManager;
         private readonly IUserService _userService;
         private readonly IStudentService _studentService;
+        private readonly ITeacherService _teacherService;
 
-        public CoursesController(ICourseService courseManager, IUserService userService, IStudentService studentService)
+        public CoursesController(ICourseService courseManager, IUserService userService, IStudentService studentService, ITeacherService teacherService)
         {
             _courseManager = courseManager;
             _userService = userService;
             _studentService = studentService;
+            _teacherService = teacherService;
         }
 
         [HttpGet]
@@ -30,6 +32,19 @@ namespace BrightAkademi.API.Controllers
         public async Task<IActionResult> GetCourses()
         {
             var response = await _courseManager.GetAllAsync();
+            if (response.IsSucceeded)
+            {
+                //return new JsonResult(response);
+                return Ok(response);
+            }
+            return NotFound();
+        }         
+        
+        [HttpGet("detailList/{categoryId}")]
+        [AllowAnonymous]
+        public async Task<IActionResult> GetCoursesWithDetail(int? categoryId)
+        {
+            var response = await _courseManager.GetCoursesWithDetail(categoryId);
             if (response.IsSucceeded)
             {
                 //return new JsonResult(response);
@@ -51,7 +66,7 @@ namespace BrightAkademi.API.Controllers
         }    
         
         [HttpGet("myCourses")]
-        [Authorize(Roles = "Trainees")]
+        [Authorize(Roles = "Trainee")]
         public async Task<IActionResult> GetMyCourses()
         {
 
@@ -73,17 +88,17 @@ namespace BrightAkademi.API.Controllers
         }
                
         [HttpGet("teachercourses")]
-        [Authorize(Roles = "Trainers")]
+        [Authorize(Roles = "Trainer")]
         public async Task<IActionResult> GetTeacherCourses()
-        {
+            {
 
             var username = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
            
             var user = _userService.GetByUsername(username).Result.Data;
-            var student = _studentService.GetByIdAsync(user.Id).Result.Data;
+            var teacher = _teacherService.GetByIdAsync(user.Id).Result.Data;
             if (user != null)
             {
-                var response =await _courseManager.GetByStudentIdAsync(student.Id);
+                var response =await _courseManager.GetByTeacherId(teacher.Id);
                 if (response.IsSucceeded)
                 {
                     //return new JsonResult(response);
@@ -93,7 +108,7 @@ namespace BrightAkademi.API.Controllers
       
             return NotFound();
         }
-
+                
         [HttpGet("{id}")]
         public async Task<IActionResult> GetByIdCourse(int id)
         {

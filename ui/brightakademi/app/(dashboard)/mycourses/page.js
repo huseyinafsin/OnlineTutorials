@@ -1,11 +1,13 @@
 "use client"
 import React, { useEffect, useState } from 'react'
+import  useTokenExpirationCheck from '@/app/hooks/useTokenExpirationCheck'
 
 export default function MyCourses() {
 const [items, setItems] = useState([]);
 const [isLoaded, setIsLoaded] = useState(false);
 const [hasError, setHasError] = useState(null);
 const tokenStr = 'Bearer' + ' ' + JSON.parse(localStorage.getItem('access')).token;
+useTokenExpirationCheck()
 
 
     useEffect(() => {

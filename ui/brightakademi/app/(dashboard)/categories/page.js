@@ -6,7 +6,6 @@ import { Modal, Button } from "react-bootstrap";
 import { useRouter } from 'next/navigation';
 
 export default function Home() {
-
   const [refresh, setRefresh] = useState(1);
   const [hasError, setHasError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -415,7 +414,7 @@ export default function Home() {
                       </tr>
                     </tfoot>
                   </table>
-                    : <h4> Kategori bulunmadı, yeni birtane eklyin</h4>
+                    : <h4> Kategori bulunmadı, yeni birtane ekleyin</h4>
                 }
 
               </div>
