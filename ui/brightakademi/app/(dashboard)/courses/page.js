@@ -199,7 +199,7 @@ export default function Home() {
               <div className="card-header " >
                 <div className='d-flex justify-content-between'>
                   <h3 className="card-title">
-                    courses
+                    Kurslar
                   </h3>
                   <button className='btn btn-sm btn-primary' onClick={handleOpenCreateModal}>Ekle</button>
                 </div>

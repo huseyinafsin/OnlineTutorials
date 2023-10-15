@@ -18,13 +18,15 @@ namespace BrightAkademi.API.Controllers
         private readonly IUserService _userService;
         private readonly IStudentService _studentService;
         private readonly ITeacherService _teacherService;
+        private readonly ICourseStudentService _courseStudentService;
 
-        public CoursesController(ICourseService courseManager, IUserService userService, IStudentService studentService, ITeacherService teacherService)
+        public CoursesController(ICourseService courseManager, IUserService userService, IStudentService studentService, ITeacherService teacherService, ICourseStudentService courseStudentService)
         {
             _courseManager = courseManager;
             _userService = userService;
             _studentService = studentService;
             _teacherService = teacherService;
+            _courseStudentService = courseStudentService;
         }
 
         [HttpGet]
@@ -77,6 +79,28 @@ namespace BrightAkademi.API.Controllers
             if (user != null)
             {
                 var response =await _courseManager.GetByStudentIdAsync(student.Id);
+                if (response.IsSucceeded)
+                {
+                    //return new JsonResult(response);
+                    return Ok(response);
+                }
+            }
+      
+            return NotFound();
+        }
+                  
+        [HttpGet("toRegister")]
+        [Authorize(Roles = "Trainee")]
+        public async Task<IActionResult> GetStudentCourseToRegister()
+        {
+
+            var username = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+           
+            var user = _userService.GetByUsername(username).Result.Data;
+            var student = _studentService.GetByIdAsync(user.Id).Result.Data;
+            if (user != null)
+            {
+                var response =await _courseManager.GetStudentCourseToRegister(student.Id);
                 if (response.IsSucceeded)
                 {
                     //return new JsonResult(response);
@@ -155,6 +179,32 @@ namespace BrightAkademi.API.Controllers
                 return CreateActionResult(response);
             }
             return BadRequest();
+        }       
+        
+        [HttpGet("register/{courseId}")]
+        [Authorize(Roles = "Super Admin,Admin,Trainee")]
+        public async Task<IActionResult> RegisterToCourse(int courseId)
+        {
+
+            var username = HttpContext.User.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            var user = _userService.GetByUsername(username).Result.Data;
+            var student = _studentService.GetByIdAsync(user.Id).Result.Data;
+
+            var dto = new CourseStudentDto
+            {
+                CourseId = courseId,
+                StudentId = student.Id,
+            };
+            var response = await _courseStudentService.Create(dto);
+            if (response.IsSucceeded)
+            {
+                return CreateActionResult(response);
+            }
+            return BadRequest();
         }
+
+
+      
     }
 }

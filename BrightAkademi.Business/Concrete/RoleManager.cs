@@ -74,4 +74,4 @@ namespace BrightAkademi.Business.Concrete
             return Response<NoContent>.Fail("Böyle bir seviye bulunamadı", 401);
         }
     }
-}
+    }

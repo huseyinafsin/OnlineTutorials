@@ -13,5 +13,7 @@ namespace BrightAkademi.Business.Abstract
         Task<Response<NoContent>> DeleteAsync(int id);
         Task<Response<UserDto>> GetByUsername(string username);
         Task<Response<List<UserRole>>> GetUserRoles(int id);
+        Task<int> UserCount();
+        Task<Response<List<UserDto>>> LastUsers();
     }   
 }

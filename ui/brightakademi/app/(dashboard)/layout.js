@@ -7,6 +7,7 @@ import Footer from './footer';
 import Navbar from './navbar';
 import Link from 'next/link';
 import  useTokenExpirationCheck from '@/app/hooks/useTokenExpirationCheck'
+import Sidebar from './sidebar';
 
 
 export default function DashboardLayout({ children }) {
@@ -114,94 +115,7 @@ export default function DashboardLayout({ children }) {
                   </div>
                 </div>
                 {/* Sidebar Menu */}
-                <nav className="mt-2">
-                  <ul
-                    className="nav nav-pills nav-sidebar flex-column"
-                    data-widget="treeview"
-                    role="menu"
-                    data-accordion="false"
-                  >
-                    {/* Add icons to the links using the .nav-icon class
-         with font-awesome or any other icon font library */}
-                    <li className="nav-item menu-open">
-                    <Link href="/" className={"nav-link active"}>
-                        <i className="nav-icon fas fa-home"> </i>
-                        <p>
-                          Dashboard
-                          <i className="right fas fa-angle-left" />
-                        </p>
-                      </Link>
-
-                    </li>
-                    <li className="nav-header">Öğrenci İşlemleri</li>
-                    <li className="nav-item">
-                      <Link href="/companies" className={"nav-link"}>
-                        <i className="nav-icon far fa-building"> </i>
-                        <p>
-                          Şirketler                      
-                        </p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                      <Link href="/mycourses" className={"nav-link"}>
-                        <i className="nav-icon far fa-building"> </i>
-                        <p>
-                          Derslerim                      
-                        </p>
-                      </Link>
-                    </li>
-                    <li className="nav-header">Admin İşlemleri</li>
-                    <li className="nav-item">
-                    <Link href="/courses" className={"nav-link"}>
-                        <i className="nav-icon fas fa-book-open" />
-                        <p>Kurslar</p>
-                      </Link>
-                    </li>
-                    <li className="nav-header">Öğretmen işlemleri</li>
-                    <li className="nav-item">
-                    <Link href="/students" className={"nav-link"}>
-                        <i className="nav-icon fas fa-user-graduate" />
-                        <p>Öğrenciler</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/teachers" className={"nav-link"}>
-                        <i className="nav-icon fas fa-chalkboard-teacher" />
-                        <p>Öğretmenler</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/categories" className={"nav-link"}>
-                        <i className="nav-icon fas fa-shapes" />
-                        <p>Kategoriler</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/levels" className={"nav-link"}>
-                        <i className="nav-icon fas fa-align-right" />
-                        <p>Seviyeler</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/users" className={"nav-link"}>
-                        <i className="nav-icon fas fa-users" />
-                        <p>Kullanıcılar</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/roles" className={"nav-link"}>
-                        <i className="nav-icon fas fa-user-tag" />
-                        <p>Roller</p>
-                      </Link>
-                    </li>
-                    <li className="nav-item">
-                    <Link href="/permissons" className={"nav-link"}>
-                        <i className="nav-icon fas fa-key" />
-                        <p>Kullanıcı izinleri</p>
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
+                  <Sidebar/>
                 {/* /.sidebar-menu */}
               </div>
               {/* /.sidebar */}

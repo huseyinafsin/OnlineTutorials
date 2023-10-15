@@ -61,12 +61,13 @@ namespace BrightAkademi.API.Controllers
             var response = await _companyManager.UpdateAsync(companyUpdateDto);
             if (response.IsSucceeded)
             {
-                return CreateActionResult(response);
+                //return CreateActionResult(response);
+               return Ok(response);
             }
             return BadRequest();
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
         [Authorize(Roles = "Super Admin,Admin")]
         public async Task<IActionResult> DeleteCompany(int id)
         {

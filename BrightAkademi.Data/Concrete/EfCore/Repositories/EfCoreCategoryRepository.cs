@@ -19,5 +19,12 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
                 .Categories
                 .AnyAsync(x => x.Id == id);
         }
+
+        public async Task<int> CategoryCount()
+        {
+            return _context
+                .Categories
+                .Count();
+        }
     }
 }

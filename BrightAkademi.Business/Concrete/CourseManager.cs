@@ -27,6 +27,11 @@ namespace BrightAkademi.Business.Concrete
             _mapper = mapper;
         }
 
+        public  async Task<int> CourseCount()
+        {
+           return await  _courseRepository.CourseCount();
+        }
+
         public async Task<Response<CourseDto>> CreateAsync(CourseCreateDto courseCreateDto)
         {
             try
@@ -137,6 +142,34 @@ namespace BrightAkademi.Business.Concrete
             try
             {
                 var courses = await _courseRepository.GetCoursesWithDetail(categoryId);
+                var courseDtos = _mapper.Map<List<CourseDto>>(courses);
+                return Response<List<CourseDto>>.Success(courseDtos, 200);
+            }
+            catch (Exception ex)
+            {
+                return Response<List<CourseDto>>.Fail($"An error occurred: {ex.Message}", 500);
+            }
+        }
+
+        public async Task<Response<List<CourseDto>>> GetStudentCourseToRegister(int id)
+        {
+            try
+            {
+                var courses = await _courseRepository.GetStudentCourseToRegister(id);
+                var courseDtos = _mapper.Map<List<CourseDto>>(courses);
+                return Response<List<CourseDto>>.Success(courseDtos, 200);
+            }
+            catch (Exception ex)
+            {
+                return Response<List<CourseDto>>.Fail($"An error occurred: {ex.Message}", 500);
+            }
+        }
+
+        public async Task<Response<List<CourseDto>>> TopCourses()
+        {
+            try
+            {
+                var courses = await _courseRepository.TopCourses();
                 var courseDtos = _mapper.Map<List<CourseDto>>(courses);
                 return Response<List<CourseDto>>.Success(courseDtos, 200);
             }

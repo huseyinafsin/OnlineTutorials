@@ -3,7 +3,7 @@ import { info } from 'autoprefixer';
 import { useEffect, useState } from 'react';
 import { toast } from 'react-toastify';
 import { Modal, Button } from "react-bootstrap";
-
+import hasAccess from '@/app/hooks/hasAccess'
 export default function Home() {
 
   const [refresh, setRefresh] = useState(1);
@@ -13,7 +13,7 @@ export default function Home() {
   const [isCreateModalOpen, setIsCreateModalOpen] = useState(false);
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
-  const [item, setItem] = useState({id:-1,name:"", url:"", description:""});
+  const [item, setItem] = useState({});
   const tokenStr = 'Bearer' + ' ' + JSON.parse(localStorage.getItem('access')).token;
 
 
@@ -27,6 +27,18 @@ export default function Home() {
     faq: '',
     description: ''
   })
+  const resetInputField =()=>{
+    setInputField({
+        name: '',
+        phoneNumber: '',
+        email:'',
+        isActive:false,
+        address:'',
+        about: '',
+        faq: '',
+        description: ''
+    })
+  }
 
 
   const inputsHandler = (e) => {
@@ -103,7 +115,9 @@ export default function Home() {
           Authorization: tokenStr
         }),
       }).then((res) => {
-        if (!res.ok) { throw new Error("unauthorized") }
+        if (res.status===400) {
+          toast.error("Bilgileri eksik girdiniz")
+        }
         return res.json();
       })
       .then(
@@ -113,20 +127,22 @@ export default function Home() {
           else
             toast.error(result.title);
         },
-      ).catch(e => {
-        toast.error("Yetkiniz yok")
-       setHasError(true)
+      ).catch(() => {
+        if (!hasAccess()) {
+          toast.error("Yetkiniz yok")
+          setHasError(true)
+        }
       })
       .finally(() => {
         handleCloseCreateModal()
+        setItem({})
         setIsLoaded(true)
       })
       setRefresh(refresh+1)
   }
   const handleUpdate = () => {
     var obj = JSON.stringify(item);
-    try{
-   const response = fetch(`${process.env.API_URL}/companies`,
+    fetch(`${process.env.API_URL}/companies`,
       {
         method: 'PUT',
         body: obj,
@@ -134,32 +150,28 @@ export default function Home() {
           'content-type': 'application/json',
           Authorization: tokenStr
         }),
-      }).then(res=> {return res.json()});
-      console.log("res:"+response.status)
-      // .then((res) => {
-      //   if (!res.ok) { throw new Error("unauthorized") }
-      //   return res.json();
-      // })
-      // .then(
-      //   (result) => {
-      //     if (result.errors == null)
-      //       toast("Şirket Kaydedildi");
-      //     else
-      //       toast.error(result.title);
-      //   }).catch((e) => {
-      //     toast.error("Yetkiniz yok")
-      //    setHasError(true)
-
-      //   })
-      // .finally(f => {
-      //   handleCloseUpdateModal()
-      //   setItem({})
-      //   setIsLoaded(true);
-      // }
-      // )
-    }catch(e){
-      console.log("error:"+e)
-    }
+      })
+      .then((res) => {
+        return res.json();
+      })
+      .then(
+        (result) => {
+          if (result.errors == null)
+            toast("Şirket Kaydedildi");
+          else
+            toast.error(result.title);
+        }).catch(() => {
+          if (!hasAccess()) {
+            toast.error("Yetkiniz yok")
+            setHasError(true)
+          }
+        })
+      .finally(f => {
+        handleCloseUpdateModal()
+        setItem({})
+        setIsLoaded(true);
+      }
+      )
       setRefresh(refresh+1)
   }
 
@@ -185,8 +197,10 @@ export default function Home() {
           else
             notify(result.title, "error");
         }).catch(e => {
-          toast.error("Yetkiniz yok")
-         setHasError(true)
+          if (!hasAccess()) {
+            toast.error("Yetkiniz yok")
+            setHasError(true)
+          }
         }).finally(f => {
           setItem({})
           handleCloseDeleteModal()

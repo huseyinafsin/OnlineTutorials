@@ -18,6 +18,7 @@ namespace BrightAkademi.Business.Concrete
             _mapper = mapper;
         }
 
+
         public async Task<Response<CategoryDto>> CreateAsync(CategoryCreateDto categoryCreateDto)
         {
             var newCategory = _mapper.Map<Category>(categoryCreateDto);
@@ -69,6 +70,12 @@ namespace BrightAkademi.Business.Concrete
                 return Response<NoContent>.Success(204);
             }
             return Response<NoContent>.Fail("Böyle bir kategori bulunamadı", 401);
+        }
+
+
+        Task<int> ICategoryService.CategoryCount()
+        {
+            return _categoryRepository.CategoryCount();
         }
     }
 }

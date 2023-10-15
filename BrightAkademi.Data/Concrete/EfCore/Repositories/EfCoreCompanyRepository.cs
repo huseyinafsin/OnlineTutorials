@@ -17,7 +17,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
         public async Task<bool> AnyAsync(int id)
         {
             return await _context
-                .Categories
+                .Companies
                 .AnyAsync(x => x.Id == id);
         }
     }

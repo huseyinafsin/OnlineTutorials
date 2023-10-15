@@ -3,6 +3,7 @@ using BrightAkademi.Data.Concrete.EfCore.Contexts;
 using BrightAkademi.Entity.Concrete;
 using BrightAkademi.Shared.DTOs;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace BrightAkademi.Data.Concrete.EfCore.Repositories
 {
@@ -29,11 +30,35 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
                   .ToListAsync();
         }
 
+        public async Task<List<Student>> GetByTeacherId(int id)
+            {
+            var courseIds = await _context.Courses
+             .Include(x => x.TeacherCourses)
+             .Where(w => w.TeacherCourses.Select(s => s.TeacherId).Contains(id))
+             .Select(s => s.Id)
+             .ToListAsync();
+
+
+
+            var students = _context.CourseStudents
+                .Include(i => i.Course)
+                .Include(i => i.Student)
+                .Where(w => courseIds.Contains(w.CourseId.Value)).Select(s=>s.Student).ToList();
+
+            return students;
+        }
+
         public Task<Student> GetByUserIdAsync(int userId)
         {
             return _context
                  .Students
                  .FirstOrDefaultAsync(x => x.UserId == userId);
+        }
+
+        public async Task<int> StudentCount()
+        {
+            return _context
+                .Students.Count();
         }
     }
 }

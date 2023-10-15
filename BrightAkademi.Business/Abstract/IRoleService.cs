@@ -10,5 +10,5 @@ namespace BrightAkademi.Business.Abstract
         Task<Response<RoleDto>> CreateAsync(RoleDto roleDto);
         Task<Response<NoContent>> UpdateAsync(RoleDto roleDto);
         Task<Response<NoContent>> DeleteAsync(int id);
-    }
+    }  
 }

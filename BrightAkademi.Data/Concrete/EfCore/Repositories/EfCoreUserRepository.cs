@@ -19,5 +19,17 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
                .Users
                .FirstOrDefaultAsync(x => x.Username == username);
         }
+
+        public async Task<List<User>> LastUsers()
+        {
+            return _context
+           .Users
+           .OrderBy(x => x.CreatedDate).Take(5).ToList();
+        }
+
+        public Task<int> UserCount()
+        {
+           return _context.Users.CountAsync();
+        }
     }
 }

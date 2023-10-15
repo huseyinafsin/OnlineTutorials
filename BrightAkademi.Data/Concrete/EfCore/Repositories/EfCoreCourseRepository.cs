@@ -18,8 +18,14 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
         public async Task<bool> AnyAsync(int id)
         {
             return await _context
-                .Categories
+                .Courses
                 .AnyAsync(x => x.Id == id);
+        }
+
+        public async Task<int> CourseCount()
+        {
+            return  _context
+                .Courses.Count();
         }
 
         public async Task<List<Course>> GetByStudentIdAsync(int studentId)
@@ -42,6 +48,19 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
                 .Include(x => x.Level)
                 .Include(x => x.Category);
             return categoryId== 0? await q.ToListAsync() :await q.Where(x=>x.CategoryId==categoryId.Value).ToListAsync(); 
+        }
+
+        public async Task<List<Course>> GetStudentCourseToRegister(int id)
+        {
+            return await _context.Courses
+                .Include(x => x.CourseStudents)
+                .Where(w => !w.CourseStudents
+                .Select(s => s.StudentId).Contains(id)).ToListAsync();
+        }
+
+        public async Task<List<Course>> TopCourses()
+        {
+            return _context.Courses.Take(5).ToList();
         }
     }
 }

@@ -43,6 +43,8 @@ namespace BrightAkademi.Business.Mapping
             CreateMap<User, UserLoginDto>().ReverseMap();
 
             CreateMap<Role, RoleDto>().ReverseMap();
+
+            CreateMap<CourseStudent, CourseStudentDto>().ReverseMap();
             }
     }
 }

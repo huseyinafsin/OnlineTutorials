@@ -13,5 +13,8 @@ namespace BrightAkademi.Business.Abstract
         Task<Response<List<CourseDto>>> GetByStudentIdAsync(int studentId);
         Task<Response<List<CourseDto>>> GetByTeacherId(int idteacherId);
         Task<Response<List<CourseDto>>> GetCoursesWithDetail(int? categoryId);
+        Task<int> CourseCount();
+        Task<Response<List<CourseDto>>> TopCourses();
+        Task<Response<List<CourseDto>>> GetStudentCourseToRegister(int id);
     }
 }

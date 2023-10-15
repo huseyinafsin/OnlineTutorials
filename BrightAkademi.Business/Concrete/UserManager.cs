@@ -71,6 +71,18 @@ namespace BrightAkademi.Business.Concrete
             return Response<List<UserRole>>.Success(userRoles, 200);
         }
 
+        public async Task<Response<List<UserDto>>> LastUsers()
+        {
+            var userlist = await _userRepository.LastUsers();
+            if (userlist == null)
+            {
+                return Response<List<UserDto>>.Fail("Hiç kullanıcı bulunamadı", 301);
+            }
+            var userDtoList = _mapper.Map<List<UserDto>>(userlist);
+            return Response<List<UserDto>>.Success(userDtoList, 200);
+
+        }
+
         public async Task<Response<NoContent>> UpdateAsync(UserUpdateDto userUpdateDto)
         {
             var isThere = await _userRepository.GetByIdAsync(userUpdateDto.Id);
@@ -84,6 +96,9 @@ namespace BrightAkademi.Business.Concrete
             return Response<NoContent>.Fail("Böyle bir seviye bulunamadı", 401);
         }
 
-
+        public Task<int> UserCount()
+        {
+            return _userRepository.UserCount();
+        }
     }
 }

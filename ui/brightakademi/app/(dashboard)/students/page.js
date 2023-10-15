@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { Modal, Button } from "react-bootstrap";
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import hasAccess from '@/app/hooks/hasAccess'
 
 export default function Home() {
   const [hasError, setHasError] = useState(false);
@@ -78,7 +79,7 @@ export default function Home() {
 
   const handleSubmit = () => {
     var obj = JSON.stringify(inputField);
-    fetch(`${process.env.API_URL}/student`,
+    fetch(`${process.env.API_URL}/students`,
       {
         method: 'POST',
         body: obj,
@@ -87,7 +88,6 @@ export default function Home() {
           Authorization: tokenStr
         }),
       }).then((res) => {
-        if (!res.ok) { throw new Error("unauthorized") }
         return res.json();
       })
       .then(
@@ -97,9 +97,11 @@ export default function Home() {
           else
             toast.error(result.title);
         },
-      ).catch(e => {
-        toast.error("Yetkiniz yok")
-       setHasError(true)
+      ).catch(() => {
+        if (!hasAccess()) {
+          toast.error("Yetkiniz yok")
+          setHasError(true)
+        }
       })
       .finally(() => {
         handleCloseCreateModal()
@@ -109,7 +111,7 @@ export default function Home() {
   }
   const handleUpdate = () => {
     var obj = JSON.stringify(item);
-    fetch(`${process.env.API_URL}/student`,
+    fetch(`${process.env.API_URL}/students`,
       {
         method: 'PUT',
         body: obj,
@@ -119,7 +121,9 @@ export default function Home() {
         }),
       })
       .then((res) => {
-        if (!res.ok) { throw new Error("unauthorized") }
+        if (res.status===400) {
+          toast.error("Bilgileri eksik girdiniz")
+        }
         return res.json();
       })
       .then(
@@ -128,11 +132,14 @@ export default function Home() {
             toast("Öğrenci Kaydedildi");
           else
             toast.error(result.title);
-        }).catch((e) => {
-          toast.error("Yetkiniz yok")
-         setHasError(true)
-
-        })
+        }).then(
+          (result) => {
+            if (result.errors == null)
+              toast("Öğrenci Kaydedildi");
+            else
+              toast.error(result.title);
+          },
+        )
       .finally(f => {
         handleCloseUpdateModal()
         setItem({})
@@ -144,7 +151,7 @@ export default function Home() {
 
   const handleDelete = () => {
     var obj = JSON.stringify(item)
-    fetch(`${process.env.API_URL}/student`,
+    fetch(`${process.env.API_URL}/students`,
       {
         method: 'PUT',
         body: obj,

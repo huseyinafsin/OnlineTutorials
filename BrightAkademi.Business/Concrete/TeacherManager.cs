@@ -64,6 +64,11 @@ namespace BrightAkademi.Business.Concrete
             return Response<TeacherDto>.Success(teacherDto, 200);
         }
 
+        public Task<int> TeacherCount()
+        {
+            return _teacherRepository.TeacherCount();
+        }
+
         public async Task<Response<NoContent>> UpdateAsync(TeacherUpdateDto teacherUpdateDto)
         {
             var isThere = await _teacherRepository.AnyAsync(teacherUpdateDto.Id);

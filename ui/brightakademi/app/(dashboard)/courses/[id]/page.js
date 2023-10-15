@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
+import { useParams } from 'next/navigation'
+
 export default function Home() {
     const [item, setItem] = useState({})
     const [categories, setCategories] = useState([])
@@ -9,6 +11,8 @@ export default function Home() {
     const [companies, setCompanies] = useState([])
     const [teachers, setTeachers] = useState([])
     const [isLoaded, setIsLoaded] = useState(false);
+    const tokenStr = 'Bearer' + ' ' + JSON.parse(localStorage.getItem('access')).token;
+    const params = useParams()
 
     const notify = (message, type) => {
         switch (type) {
@@ -27,7 +31,7 @@ export default function Home() {
         }
     }
     useEffect(() => {
-        fetch(`${process.env.API_URL}/courses/${1}`)
+        fetch(`${process.env.API_URL}/courses/${params.id}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -82,10 +86,13 @@ export default function Home() {
     e.preventDefault()
     var obj = JSON.stringify(item);
     fetch(`${process.env.API_URL}/courses`,
-      {
+    {
         method: 'PUT',
         body: obj,
-        headers: new Headers({ 'content-type': 'application/json' }),
+        headers: new Headers({
+          'content-type': 'application/json',
+          Authorization: tokenStr
+        }),
       })
       .then(res => res.json())
       .then(
@@ -335,6 +342,7 @@ export default function Home() {
                                     <div className="form-check">
                                         <label className="form-check-label">Aftif</label>
                                         <input type="checkbox"
+                                            name='isActive'
                                             onChange={itemHandler}
                                             value={item.status} className="form-control" />
                                     </div>

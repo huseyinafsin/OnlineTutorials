@@ -19,5 +19,5 @@ namespace BrightAkademi.Data.Concrete.EfCore.Repositories
                .Levels
                .AnyAsync(x => x.Id == id);
         }
-    }   
+    }      
 } 
