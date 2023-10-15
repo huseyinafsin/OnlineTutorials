@@ -40,7 +40,7 @@ export default function Home() {
         Authorization: tokenStr
       }),
     }).then((res) => {
-      if (!res.ok) { throw new Error("unauthorized") }
+      if (!res.status) { throw new Error("unauthorized") }
       return res.json();
     }).then(
       (result) => {

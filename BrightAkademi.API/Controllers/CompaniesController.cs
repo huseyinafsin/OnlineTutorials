@@ -57,7 +57,7 @@ namespace BrightAkademi.API.Controllers
         [HttpPut]
         [Authorize(Roles = "Super Admin,Admin")]
         public async Task<IActionResult> UpdateCompany(CompanyUpdateDto companyUpdateDto)
-        {
+            {
             var response = await _companyManager.UpdateAsync(companyUpdateDto);
             if (response.IsSucceeded)
             {

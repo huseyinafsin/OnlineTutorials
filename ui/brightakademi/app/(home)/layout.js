@@ -3,9 +3,9 @@ import React from 'react'
 import Footer from './footer'
 import Navbar from './navbar'
 import { ToastContainer } from 'react-toastify'
-import useTokenExpirationCheck from '@/app/hooks/useTokenExpirationCheck'
+import  useTokenExpirationCheckForHome from '@/app/hooks/useTokenExpirationCheckForHome'
 function HomeLayout({children}) {
-  useTokenExpirationCheck()
+  useTokenExpirationCheckForHome()
   return (
 <html>
 <head>

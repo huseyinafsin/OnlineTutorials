@@ -1,3 +1,25 @@
 dotnet ef migrations add akademiwebDb --startup-project ../BrightAkademi.API
 
 dotnet ef database update --startup-project ../BrightAkademi.API
+
+
+register 
+rol atama
+yetkimiz yok düzenle sil 
+kullan?c? izinleri
+sayfay? yenilemen gerekiyor
+teacher da sorun oldu guncelle silme cal?smad? ekledi
+
+-------
+
+
+ögrenci kursa gitti 
+java 1 e kay?t oldu
+admin ogrenciyi kay?t etti ahmetreis
+ahmetreis sisteme girecek
+ders sececek veya superadmin ders atayacak ogretmen atayacak
+
+---------------
+
+kendi kay?t olabilsin
+
