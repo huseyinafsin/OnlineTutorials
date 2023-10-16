@@ -10,24 +10,29 @@ namespace BrightAkademi.Business.Concrete
     public class StudentManager : IStudentService
     {
         private readonly IStudentRepository _studentRepository;
+        private readonly IUserRepository _userRepository;
+        private readonly IUserRoleRepository _userRoleRepository;
+
         private readonly IMapper _mapper;
 
-        public StudentManager(IStudentRepository studentRepository, IMapper mapper)
+        public StudentManager(IStudentRepository studentRepository, IMapper mapper, IUserRoleRepository userRoleRepository, IUserRepository userRepository)
         {
             _studentRepository = studentRepository;
             _mapper = mapper;
+            _userRoleRepository = userRoleRepository;
+            _userRepository = userRepository;
         }
 
-        public async Task<Response<StudentDto>> CreateAsync(StudentCreateDto studentCreateDto)
+        public async Task<Response<StudentDto>> CreateAsync(StudentCreateDto dto)
         {
-            var result = _mapper.Map<Student>(studentCreateDto);
-            result.User = new User
-            {
-                Username = result.FirstName.ToLower() + result.LastName.ToLower(),
-                Password = result.FirstName.ToLower() + result.LastName.ToLower()
-            };
-            await _studentRepository.CreateAsync(result);
-            return Response<StudentDto>.Success(_mapper.Map<StudentDto>(result), 201);
+            var student = _mapper.Map<Student>(dto);
+
+            await _userRepository.CreateAsync(student.User);
+            await _studentRepository.CreateAsync(student);
+            var perm = new UserRole { UserId = student.UserId, RoleId = 4 };
+            await _userRoleRepository.CreateAsync(perm);
+
+            return Response<StudentDto>.Success(_mapper.Map<StudentDto>(student), 201);
         }
 
         public async Task<Response<NoContent>> DeleteAsync(int id)
@@ -109,7 +114,8 @@ namespace BrightAkademi.Business.Concrete
                 var student = _mapper.Map<Student>(studentUpdateDto);
                 student.ModifiedDate = DateTime.Now;
                 _studentRepository.Update(student);
-                return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
+                //return Response<NoContent>.Success(204);
             }
             return Response<NoContent>.Fail("Böyle bir öğrenci bulunamadı", 401);
         }

@@ -20,11 +20,13 @@ namespace BrightAkademi.Business.Concrete
             _userRepository = userRepository;
         }
 
-        public async Task<Response<UserDto>> CreateAsync(UserCreateDto userCreateDto)
+        public async Task<Response<UserDto>> CreateAsync(UserCreateDto dto)
         {
-            var newUser = _mapper.Map<User>(userCreateDto);
-            await _userRepository.CreateAsync(newUser);
-            return Response<UserDto>.Success(_mapper.Map<UserDto>(newUser), 201);
+            var user = _mapper.Map<User>(dto);
+            var userRole = new UserRole { UserId = user.Id, RoleId = dto.Role.Id };
+            await _userRoleRepository.CreateAsync(userRole);
+            await _userRepository.CreateAsync(user);
+            return Response<UserDto>.Success(_mapper.Map<UserDto>(user), 201);
         }
 
         public Task<Response<NoContent>> DeleteAsync(int id)
@@ -91,7 +93,8 @@ namespace BrightAkademi.Business.Concrete
                 var user = _mapper.Map<User>(userUpdateDto);
                 user.ModifiedDate = DateTime.Now;
                 _userRepository.Update(user);
-                return Response<NoContent>.Success(204);
+                //return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
             }
             return Response<NoContent>.Fail("Böyle bir seviye bulunamadı", 401);
         }

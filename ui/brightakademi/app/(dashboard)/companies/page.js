@@ -85,7 +85,7 @@ export default function Home() {
           setHasError(true);
         }
       )
-  }, [refresh])
+  }, [refresh,setItem, setInputField])
 
   const handleCloseCreateModal = () => setIsCreateModalOpen(false)
   const handleOpenCreateModal = () => setIsCreateModalOpen(true)
@@ -115,9 +115,7 @@ export default function Home() {
           Authorization: tokenStr
         }),
       }).then((res) => {
-        if (res.status===400) {
-          toast.error("Bilgileri eksik girdiniz")
-        }
+        if (!res.ok) { throw new Error("unauthorized") }
         return res.json();
       })
       .then(
@@ -127,16 +125,15 @@ export default function Home() {
           else
             toast.error(result.title);
         },
-      ).catch(() => {
-        if (!hasAccess()) {
-          toast.error("Yetkiniz yok")
-          setHasError(true)
-        }
+      ).catch(e => {
+        toast.error("Yetkiniz yok")
+       setHasError(true)
       })
       .finally(() => {
         handleCloseCreateModal()
-        setItem({})
         setIsLoaded(true)
+        setInputField({})
+
       })
       setRefresh(refresh+1)
   }

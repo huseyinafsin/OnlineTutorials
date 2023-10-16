@@ -69,9 +69,10 @@ namespace BrightAkademi.Business.Concrete
                 var role = _mapper.Map<Role>(roleDto);
                 role.ModifiedDate = DateTime.Now;
                 _roleRepository.Update(role);
-                return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
+                //return Response<NoContent>.Success(204);
             }
             return Response<NoContent>.Fail("Böyle bir seviye bulunamadı", 401);
         }
     }
-    }
+}

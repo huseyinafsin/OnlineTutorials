@@ -67,7 +67,8 @@ namespace BrightAkademi.Business.Concrete
                 var category = _mapper.Map<Category>(categoryUpdateDto);
                 category.ModifiedDate = DateTime.Now;
                 _categoryRepository.Update(category);
-                return Response<NoContent>.Success(204);
+                //return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
             }
             return Response<NoContent>.Fail("Böyle bir kategori bulunamadı", 401);
         }

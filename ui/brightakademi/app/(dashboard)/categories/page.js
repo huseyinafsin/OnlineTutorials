@@ -20,7 +20,8 @@ export default function Home() {
   const [inputField, setInputField] = useState({
     name: '',
     url: '',
-    description: ''
+    description: '',
+    isActive:false 
   })
 
 
@@ -40,7 +41,6 @@ export default function Home() {
         Authorization: tokenStr
       }),
     }).then((res) => {
-      if (!res.status) { throw new Error("unauthorized") }
       return res.json();
     }).then(
       (result) => {
@@ -53,7 +53,7 @@ export default function Home() {
         setHasError(true);
       }
     )
-  }, [refresh])
+  }, [inputField, item])
 
 
   const handleCloseCreateModal = () => setIsCreateModalOpen(false)
@@ -91,7 +91,7 @@ export default function Home() {
       .then(
         (result) => {
           if (result.errors == null)
-            toast("Kategori Kaydedildi");
+            toast("Kategori Eklendi");
           else
             toast.error(result.title);
         },
@@ -102,6 +102,8 @@ export default function Home() {
       .finally(() => {
         handleCloseCreateModal()
         setIsLoaded(true)
+        setInputField({})
+
       })
       setRefresh(refresh+1)
   }
@@ -115,8 +117,7 @@ export default function Home() {
           'content-type': 'application/json',
           Authorization: tokenStr
         }),
-      })
-      .then((res) => {
+      }).then((res) => {
         if (!res.ok) { throw new Error("unauthorized") }
         return res.json();
       })
@@ -126,19 +127,19 @@ export default function Home() {
             toast("Kategori Kaydedildi");
           else
             toast.error(result.title);
-        }).catch((e) => {
-          toast.error("Yetkiniz yok")
-         setHasError(true)
-
-        })
-      .finally(f => {
-        handleCloseUpdateModal()
+        },
+      ).catch(e => {
+        toast.error("Yetkiniz yok")
+       setHasError(true)
+      })
+      .finally(() => {
+        handleCloseCreateModal()
+        setIsLoaded(true)
         setItem({})
-        setIsLoaded(true);
-      }
-      )
+
+      })
       setRefresh(refresh+1)
-    }
+  }
 
   const handleDelete = () => {
     var obj = JSON.stringify(item)
@@ -158,18 +159,21 @@ export default function Home() {
       .then(
         (result) => {
           if (result.errors == null)
-            notify("Kategori Silindi");
+            toast("Kategori Silindi");
           else
-            notify(result.title, "error");
-        }).catch(e => {
-          toast.error("Yetkiniz yok")
-         setHasError(true)
-        }).finally(f => {
-          setItem({})
-          handleCloseDeleteModal()
-          setIsLoaded(true)
-        })
-        setRefresh(refresh+1)
+            toast.error(result.title);
+        },
+      ).catch(e => {
+        toast.error("Yetkiniz yok")
+       setHasError(true)
+      })
+      .finally(() => {
+        handleCloseCreateModal()
+        setIsLoaded(true)
+        setInputField({})
+
+      })
+      setRefresh(refresh+1)
   }
 
   return (

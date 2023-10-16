@@ -219,6 +219,31 @@ export default function Home() {
                       />
                     </div>
                     <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Kullanıcı adı</label>
+                      <input
+                        type="text"
+                        onChange={(inputsHandler)}
+                        name='username'
+                        value={inputField.username}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Kullanıcı adı"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Şifre</label>
+                      <input
+                        type="password"
+                        onChange={(inputsHandler)}
+                        name='password'
+                        value={inputField.password}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Şifre"
+                      />
+                    </div>
+                 
+                    <div className="form-group">
                       <label htmlFor="exampleInputEmail1">Durum</label>
                       <textarea
                         type="text"
@@ -273,6 +298,30 @@ export default function Home() {
                         className="form-control"
                         id="exampleInputEmail1"
                         placeholder="Soyad"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Kullanıcı adı</label>
+                      <input
+                        type="text"
+                        name='username'
+                        onChange={itemHandler}
+                        value={item.username}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Kullanıcı adı"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Şifre</label>
+                      <input
+                        type="text"
+                        name='password'
+                        onChange={itemHandler}
+                        value={item.password}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Şifre"
                       />
                     </div>
                     <div className="form-group">

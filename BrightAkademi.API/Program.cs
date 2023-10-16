@@ -30,6 +30,7 @@ builder.Services.AddScoped<ITeacherService, TeacherManager>();
 builder.Services.AddScoped<IUserService, UserManager>();
 builder.Services.AddScoped<IRoleService, RoleManager>();
 builder.Services.AddScoped<ICourseStudentService, CourseStudentManager>();
+builder.Services.AddScoped<IUserRoleService, UserRoleManager>();
 
 builder.Services.AddScoped<ICategoryRepository, EfCoreCategoryRepository>();
 builder.Services.AddScoped<ICompanyRepository, EfCoreCompanyRepository>();

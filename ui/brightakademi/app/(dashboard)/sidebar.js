@@ -29,7 +29,6 @@ export default function Sidebar() {
     { path: '/levels', text: 'Seviyeler', icon: 'fas fa-align-right', roles:['Super Admin'] },
     { path: '/users', text: 'Kullanıcılar', icon: 'fas fa-users', roles:['Super Admin'] },
     { path: '/roles', text: 'Roller', icon: 'fas fa-user-tag', roles:['Super Admin'] },
-    { path: '/permissions', text: 'Kullanıcı izinleri', icon: 'fas fa-key', roles:['Super Admin'] },
   ];
 
   return (

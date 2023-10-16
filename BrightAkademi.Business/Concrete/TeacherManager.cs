@@ -10,25 +10,29 @@ namespace BrightAkademi.Business.Concrete
     public class TeacherManager : ITeacherService
     {
         private readonly ITeacherRepository _teacherRepository;
+        private readonly IUserRoleRepository _userRoleRepository;
+        private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;
 
-        public TeacherManager(ITeacherRepository teacherRepository, IMapper mapper)
+        public TeacherManager(ITeacherRepository teacherRepository, IUserRepository userRepository, IMapper mapper, IUserRoleRepository userRoleRepository)
         {
             _teacherRepository = teacherRepository;
             _mapper = mapper;
+            _userRoleRepository = userRoleRepository;
+            IUserRepository _userRepository = userRepository;
         }
 
-        public async Task<Response<TeacherDto>> CreateAsync(TeacherCreateDto teacherCreateDto)
+        public async Task<Response<TeacherDto>> CreateAsync(TeacherCreateDto dto)
         {
-            var result = _mapper.Map<Teacher>(teacherCreateDto);
-            result.User = new User
-            {
-                Username = result.FirstName.ToLower() + result.LastName.ToLower(),
-                Password = result.FirstName.ToLower() + result.LastName.ToLower(),
-                IsActive=true
-            };
-            await _teacherRepository.CreateAsync(result);
-            return Response<TeacherDto>.Success(_mapper.Map<TeacherDto>(result), 201);
+            var teacher = _mapper.Map<Teacher>(dto);
+            teacher.User = _mapper.Map<User>(dto.User);
+            await _userRepository.CreateAsync(teacher.User);
+            await _teacherRepository.CreateAsync(teacher);
+
+            var perm = new UserRole { UserId = teacher.UserId, RoleId = 3 };
+            await _userRoleRepository.CreateAsync(perm);
+
+            return Response<TeacherDto>.Success(_mapper.Map<TeacherDto>(teacher), 201);
         }
 
         public async Task<Response<NoContent>> DeleteAsync(int id)
@@ -77,7 +81,8 @@ namespace BrightAkademi.Business.Concrete
                 var category = _mapper.Map<Teacher>(teacherUpdateDto);
                 category.ModifiedDate = DateTime.Now;
                 _teacherRepository.Update(category);
-                return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
+                //return Response<NoContent>.Success(204);
             }
             return Response<NoContent>.Fail("Böyle bir öğretmen bulunamadı", 401);
         }

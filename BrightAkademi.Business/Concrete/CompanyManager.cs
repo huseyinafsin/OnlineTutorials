@@ -66,7 +66,8 @@ namespace BrightAkademi.Business.Concrete
                 var company = _mapper.Map<Company>(companyUpdateDto);
                 company.ModifiedDate = DateTime.Now;
                 _companyRepository.Update(company);
-                return Response<NoContent>.Success(204);
+                //return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
             }
             return Response<NoContent>.Fail("Böyle bir şirket bulunamadı", 401);
         }

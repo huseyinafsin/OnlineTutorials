@@ -6,8 +6,6 @@ namespace BrightAkademi.Entity.Concrete
     {
         public int Id { get; set; }
         public int UserId { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
         public string? Profession { get; set; }
         public string? Experience { get; set; }
         public string? EducationInfo { get; set; }
@@ -19,6 +17,7 @@ namespace BrightAkademi.Entity.Concrete
         public DateTime ModifiedDate { get; set; } = DateTime.Now;
         public User User { get; set; }
         public List<Course>? Courses { get; set; }
+        public List<UserRole>? UserRoles { get; set; }
 
     }
 }

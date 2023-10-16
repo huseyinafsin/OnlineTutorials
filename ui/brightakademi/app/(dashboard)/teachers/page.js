@@ -121,7 +121,6 @@ export default function Home() {
         }),
       })
       .then((res) => {
-        if (!res.ok) { throw new Error("unauthorized") }
         return res.json();
       })
       .then(

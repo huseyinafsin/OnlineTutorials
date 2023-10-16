@@ -20,7 +20,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                     About = "Yazılım eğitimi veren ana kucağı",
                     PhoneNumber = "1234567890",
                     Email = "info.wissenakademie.com",
-                    FAQ = "Bilgim olmalı mı ? Eğitim durumum ne olmalı ?."
+                    //FAQ = "Bilgim olmalı mı ? Eğitim durumum ne olmalı ?."
                 }
             );
         }

@@ -66,7 +66,8 @@ namespace BrightAkademi.Business.Concrete
                 var level = _mapper.Map<Level>(levelUpdateDto);
                 level.ModifiedDate = DateTime.Now;
                 _levelRepository.Update(level);
-                return Response<NoContent>.Success(204);
+                return Response<NoContent>.Success(200);
+                //return Response<NoContent>.Success(204);
             }
             return Response<NoContent>.Fail("Böyle bir seviye bulunamadı", 401);
         }

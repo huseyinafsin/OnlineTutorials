@@ -10,8 +10,6 @@ namespace BrightAkademi.Entity.Concrete
         public string? About { get; set; }
         public string? PhoneNumber { get; set; }
         public string? Email { get; set; }
-        public string? FAQ { get; set; } //Frequently Asked Questions
-
         public bool IsActive { get; set; } = true;
         public bool IsDeleted { get; set; } = false;
         public DateTime CreatedDate { get; set; } = DateTime.Now;

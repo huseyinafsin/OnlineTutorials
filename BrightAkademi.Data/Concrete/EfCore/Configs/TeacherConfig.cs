@@ -15,9 +15,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new Teacher
                 {
                     Id = 1,
-                    UserId=3,
-                    FirstName = "Ramiz",
-                    LastName = "Karaeski",
+                    UserId = 3,
                     Profession = "Full Stack Web Developer",
                     Experience = "30",
                     EducationInfo = "Zonguldak Bilgisayar Öğretmenliği",
@@ -28,8 +26,6 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 {
                     Id = 2,
                     UserId = 4,
-                    FirstName = "Kenan",
-                    LastName = "Birkan",
                     Profession = "IOS Developer",
                     Experience = "10",
                     EducationInfo = "Eskişehir Bilgisayar Mühendisliği",
@@ -39,9 +35,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new Teacher
                 {
                     Id = 3,
-                    UserId=5,
-                    FirstName = "Ezel",
-                    LastName = "Bayraktar",
+                    UserId = 5,
                     Profession = "Backend Developer",
                     Experience = "2",
                     EducationInfo = "Bahçeşehir Üniversitesi Yazılım Mühendisliği",
@@ -51,9 +45,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new Teacher
                 {
                     Id = 4,
-                    UserId=6,
-                    FirstName = "Serdar",
-                    LastName = "Tezcan",
+                    UserId = 6,
                     Profession = "Frontend Developer",
                     Experience = "2",
                     EducationInfo = "Arel Üniversitesi Elektronik Haberleşme Mühendisliği",
@@ -63,9 +55,7 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new Teacher
                 {
                     Id = 5,
-                    UserId=7,
-                    FirstName = "Selma",
-                    LastName = "Hünel",
+                    UserId = 7,
                     Profession = "Java Developer",
                     Experience = "2",
                     EducationInfo = "Doğuş Üniversitesi",

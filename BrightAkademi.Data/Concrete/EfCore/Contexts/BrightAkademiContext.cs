@@ -49,8 +49,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Contexts
             modelBuilder.Entity<Student>().HasQueryFilter(x => x.IsDeleted == false);
             modelBuilder.Entity<UserRole>().HasQueryFilter(x => x.IsDeleted == false);
             modelBuilder.Entity<Role>().HasQueryFilter(x => x.IsDeleted == false);
-
-
+             
+             
 
             base.OnModelCreating(modelBuilder);
         }

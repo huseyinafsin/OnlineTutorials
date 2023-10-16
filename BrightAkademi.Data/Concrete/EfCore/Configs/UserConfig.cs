@@ -15,72 +15,93 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                 new User
                 {
                     Id = 1,
+                    Firstname = "Mücahit",
+                    Lastname = "Admin",
                     Username ="superadmin",
                     Password = "superadmin",
-
                     IsActive = true,
                 },               
                 new User
                 {
                     Id = 2,
+                    Firstname = "Mücahit",
+                    Lastname = "Admin",
                     Username ="admin",
                     Password = "admin",
                     IsActive = true,
-                },              
-                new User
-                {
-                    Id = 3,
-                    Username ="ramizkaraeski",
-                    Password = "ramizkaraeski",
-                    IsActive = true,
                 },
+                 //Teachers
+                 new User
+                 {
+                     Id = 3,
+                     Firstname = "Ramiz",
+                     Lastname = "Karaeski",
+                     Username = "ramizkaraeski",
+                     Password = "ramizkaraeski",
+                     IsActive = true,
+                 },
                 new User
                 {
                     Id = 4,
+                    Firstname = "Kenan",
+                    Lastname = "Birkan",
                     Username = "kenanbirkan",
                     Password = "kenanbirkan",
                     IsActive = true,
                 },
-                new User
-                {
-                    Id = 5,
-                    Username="ezelbayraktar",
-                    Password = "ezelbayraktar",
-                    IsActive = true,
-                },
+                 new User
+                 {
+                     Id = 5,
+                     Firstname = "Ezel",
+                     Lastname = "Bayraktar",
+                     Username = "ezelbayraktar",
+                     Password = "ezelbayraktar",
+                     IsActive = true,
+                 },
                 new User
                 {
                     Id = 6,
-                    Username="serdartezcan",
+                    Firstname = "Serdar",
+                    Lastname = "Tezcan",
+                    Username = "serdartezcan",
                     Password = "serdartezcan",
                     IsActive = true,
                 },
                 new User
                 {
                     Id = 7,
-                    Username="selmahunel",
-                    Password ="selmahunel",
+                    Firstname = "Selma",
+                    Lastname = "Hünel",
+                    Username = "selmahunel",
+                    Password = "selmahunel",
                     IsActive = true,
+                },
+                //Students
+                new User
+                {
+                    Id = 8,
+                    Firstname = "Eyşan",
+                    Lastname = "Atay",
+                    Username = "eysanatay",
+                    Password = "eysanatay",
+                    IsActive = true,
+
                 },
                  new User
                  {
-                     Id = 8,
-                     Username="eysanatay",
-                     Password = "eysanatay",
+                     Id = 9,
+                     Firstname = "Ali",
+                     Lastname = "Kırgız",
+                     Username = "alikizgin",
+                     Password = "alikizgin",
                      IsActive = true,
 
                  },
                  new User
-                    {
-                        Id = 9,
-                        Username = "alikizgin",
-                        Password = "alikizgin",
-                        IsActive = true,
-
-                   },
-                 new User
                  {
                      Id = 10,
+                     Firstname = "Teyfik",
+                     Lastname = "Zaim",
                      Username = "teyfikzaim",
                      Password = "teyfikzaim",
                      IsActive = true,
@@ -89,6 +110,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 11,
+                     Firstname = "Hayratlı",
+                     Lastname = "Eskikabadayı",
                      Username = "hayratlieskikabadayi",
                      Password = "hayratlieskikabadayi",
                      IsActive = true,
@@ -97,6 +120,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 12,
+                     Firstname = "Cengiz",
+                     Lastname = "Atay",
                      Username = "cengizatay",
                      Password = "cengizatay",
                      IsActive = true,
@@ -105,6 +130,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 13,
+                     Firstname = "Bade",
+                     Lastname = "Garson",
                      Username = "badegarson",
                      Password = "badegarson",
                      IsActive = true,
@@ -113,6 +140,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 14,
+                     Firstname = "Şebnem",
+                     Lastname = "Sertuna",
                      Username = "sebnemsertuna",
                      Password = "sebnemsertuna",
                      IsActive = true,
@@ -121,6 +150,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 15,
+                     Firstname = "Temmuz",
+                     Lastname = "Kocaoğlu",
                      Username = "temmuzkocaoglu",
                      Password = "temmuzkocaoglu",
                      IsActive = true,
@@ -129,6 +160,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 16,
+                     Firstname = "Bahar",
+                     Lastname = "Tezcan",
                      Username = "bahartezcan",
                      Password = "bahartezcan",
                      IsActive = true,
@@ -137,6 +170,8 @@ namespace BrightAkademi.Data.Concrete.EfCore.Configs
                  new User
                  {
                      Id = 17,
+                     Firstname = "Azad",
+                     Lastname = "Karaeski",
                      Username = "azadkaraeski",
                      Password = "azadkaraeski",
                      IsActive = true,

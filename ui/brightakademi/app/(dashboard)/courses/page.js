@@ -9,17 +9,17 @@ export default function Home() {
   const [refresh, setRefresh] = useState(1);
   const [isLoaded, setIsLoaded] = useState(false);
   const [items, setItems] = useState([]);
-  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [item, setItem] = useState({ });
   const tokenStr = 'Bearer' + ' ' + JSON.parse(localStorage.getItem('access')).token;
-
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
+  const handleOpenDeleteModal = () => setIsDeleteModalOpen(true)
+  const handleCloseDeleteModal = () => setIsDeleteModalOpen(false)
 
   const [inputField, setInputField] = useState({
     name: '',
     url: '',
     description: ''
   })
-
 
   useEffect(() => {
     fetch(`${process.env.API_URL}/courses`, {
@@ -43,12 +43,7 @@ export default function Home() {
       )
   }, [refresh])
 
-  const handleCloseCreateModal = () => setIsCreateModalOpen(false)
-  const handleOpenCreateModal = () => setIsCreateModalOpen(true)
-  const handleOpenDeleteModal = () => setIsDeleteModalOpen(true)
-  const handleCloseDeleteModal = () => setIsDeleteModalOpen(false)
-  const handleOpenUpdateModal = () => setIsUpdateModalOpen(true)
-  const handleCloseUpdateModal = () => setIsUpdateModalOpen(false)
+
   const handleItem2Delete = (item) => {
     item.isDeleted = true
     setItem(item)
@@ -201,7 +196,7 @@ export default function Home() {
                   <h3 className="card-title">
                     Kurslar
                   </h3>
-                  <button className='btn btn-sm btn-primary' onClick={handleOpenCreateModal}>Ekle</button>
+                  <Link href={"courses/new"}  className='btn btn-sm btn-primary' >Ekle</Link>
                 </div>
               </div>
               {/* /.card-header */}

@@ -17,6 +17,7 @@ export default function Home() {
   const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(false);
   const [isPermModalOpen, setIsPermModalOpen] = useState(false);
   const [item, setItem] = useState({});
+  const [roleId, setRoleId] = useState(-1);
   const tokenStr = 'Bearer' + ' ' + JSON.parse(localStorage.getItem('access')).token;
   const router = useRouter()
 
@@ -59,21 +60,19 @@ export default function Home() {
   }, [refresh])
 
   useEffect(() => {
-    fetch(`${process.env.API_URL}/auth/roles`,{
+    fetch(`${process.env.API_URL}/auth/roles`, {
       headers: new Headers({
         'content-type': 'application/json',
         Authorization: tokenStr
       }),
-    }).then(res =>{ return res.json()})
-        .then(
-            (result) => {
-                setRoles(result.data);
-                console.log(roles)
+    }).then(res => res.json())
+      .then(
+        (result) => {
+          setRoles(result.data);
+        },
+      )
+  }, [])
 
-            },
-        )
-}, []
-)
 
   const handleCloseCreateModal = () => setIsCreateModalOpen(false)
   const handleOpenCreateModal = () => setIsCreateModalOpen(true)
@@ -128,7 +127,7 @@ export default function Home() {
         handleCloseCreateModal()
         setIsLoaded(true)
       })
-      setRefresh(refresh+1)
+    setRefresh(refresh + 1)
   }
   const handleUpdate = () => {
     var obj = JSON.stringify(item);
@@ -162,7 +161,7 @@ export default function Home() {
         setIsLoaded(true);
       }
       )
-      setRefresh(refresh+1)
+    setRefresh(refresh + 1)
   }
 
   const handleDelete = () => {
@@ -188,17 +187,36 @@ export default function Home() {
             notify(result.title, "error");
         }).catch(e => {
           toast.error("Yetkiniz yok")
-         setHasError(true)
+          setHasError(true)
         }).finally(f => {
           setItem({})
           handleCloseDeleteModal()
           setIsLoaded(true)
         })
-        setRefresh(refresh+1)
+    setRefresh(refresh + 1)
   }
-  const handlePerm =()=>{
 
+  const handlePerm = () => {
+    var obj = JSON.stringify({
+      userId: item.id,
+      roleId: roleId
+    })
+    fetch(`${process.env.API_URL}/auth/changeRole`, {
+      method: 'PUT',
+      body: obj,
+      headers: new Headers({
+        'content-type': 'application/json',
+        Authorization: tokenStr
+      },
+      ),
+    }).then((res) => { return res.json() })
+      .then(
+        (result) => {
+          toast.success("Rol Değiştirildi")
+        },
+      ).finally(handleClosePermModal())
   }
+
 
   return (
     <section className="content">
@@ -258,6 +276,30 @@ export default function Home() {
               <Modal.Body>
                 <form>
                   <div className="card-body">
+                    <div className="form-group">
+                      <label htmlFor="exampleInputEmail1"> Ad</label>
+                      <input
+                        type="text"
+                        name='firstname'
+                        onChange={itemHandler}
+                        value={item.firstname}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Kullanıcı adı"
+                      />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="exampleInputEmail1">Soyad</label>
+                      <input
+                        type="text"
+                        name='lastname'
+                        onChange={itemHandler}
+                        value={item.lastname}
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        placeholder="Kullanıcı adı"
+                      />
+                    </div>
                     <div className="form-group">
                       <label htmlFor="exampleInputEmail1">Kullanıcı adı</label>
                       <input
@@ -321,16 +363,19 @@ export default function Home() {
               <Modal.Body>
                 <form>
                   <div className="card-body">
-                  <div className="form-group">
-                  <label>İzinler</label>
-                  <select className="select2" multiple="multiple" data-placeholder="Rol seç" style={{width: "100%"}}>
-                    {
-                      roles.map((rol,index)=>{
-                        <option key={index} value={rol.id}>{rol.name}</option>
-                      })
-                    }
-                  </select>
-                </div>
+                    <div className="form-group">
+                      <label>İzinler</label>
+                      <select className="select2" onChange={(e) => { setRoleId(e.target.value) }} data-placeholder="Rol seç" style={{ width: "100%" }}>
+                        <option  disabled value={-1} >Seçiniz</option>
+                        {
+                          roles.map((rol, index) => {
+                            return (
+                              <option key={index} value={rol.id}>{rol.name}</option>
+                            )
+                          })
+                        }
+                      </select>
+                    </div>
 
                   </div>
 
@@ -392,10 +437,12 @@ export default function Home() {
                     <thead>
                       <tr>
                         <th>Kullanıcı adı</th>
+                        <th>Ad</th>
+                        <th>Soyad</th>
                         <th>Şifre</th>
                         <th>Aktiflik</th>
                         <th>Düzenle</th>
-                        <th>Rol ata</th>
+                        <th>Rol değitir</th>
                         <th>Sil</th>
                       </tr>
                     </thead>
@@ -404,6 +451,8 @@ export default function Home() {
                         items.map((user, index) => {
                           return (
                             <tr key={index}>
+                               <td><p style={{ whiteSpace: "nowrap" }}>{user.firstname}</p></td>
+                              <td><p style={{ whiteSpace: "nowrap" }}>{user.lastname}</p></td>
                               <td><p style={{ whiteSpace: "nowrap" }}>{user.username}</p></td>
                               <td><p style={{}}>****************</p></td>
                               <td>
@@ -445,6 +494,8 @@ export default function Home() {
                     </tbody>
                     <tfoot>
                       <tr>
+                        <th>Ad</th>
+                        <th>Soyad</th>
                         <th>Kullanıcı adı</th>
                         <th>Şifre</th>
                         <th>Aktiflik</th>

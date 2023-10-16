@@ -14,7 +14,7 @@ export default function DashboardLayout({ children }) {
   useTokenExpirationCheck()
   const [isLoaded, setIsLoaded] = useState(true)
   const access = JSON.parse(localStorage.getItem('access'));
-  const username = access?.username;
+  const name = access?.name;
 
 
   return (
@@ -93,9 +93,14 @@ export default function DashboardLayout({ children }) {
                     />
                   </div>
                   <div className="info">
+                  <span className='text-white'>
+                      {name}
+                      </span>
+                   
                     <a href="#" className="d-block">
-                      {username}
+                    {/* {access.roles =='Trainer' ? 'Eğitmen' : access.roles == 'Trainee' ? 'Öğrenci' : access.roles==='SSuper Admin':access.roles=='Admin'} */}
                     </a>
+                      
                   </div>
                 </div>
                 {/* SidebarSearch Form */}
