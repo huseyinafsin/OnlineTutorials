@@ -2,6 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 function login() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [isValidUser, setIsValidUser] = useState(true);
@@ -65,7 +66,7 @@ function login() {
           </div>
           <h2>Giriş Yapın</h2>
           <div className="form-input">
-            <label htmlFor="username">User Name</label>
+            <label htmlFor="username">Kullanıcı adı</label>
             <input
               value={inputField.username}
               onChange={inputsHandler}
@@ -89,9 +90,8 @@ function login() {
             <input onClick={handleSubmit} type="submit" name="submit" defaultValue="Giriş" />
           </div>
           {/* Forget Password */}
-          <a href="#" className="forget">
-            Şifremi unuttum
-          </a>
+          <Link href="/register" className={"mr-5"}> Zaten hesabın var mı?</Link>
+          <Link href="/" >Anasayfaya dön</Link>
           {/* Forget Password */}
 
         </div>

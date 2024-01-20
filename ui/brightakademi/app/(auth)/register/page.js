@@ -2,6 +2,7 @@
 import React, { useContext, useState } from 'react'
 import { toast } from 'react-toastify';
 import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 function page() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [inputField, setInputField] = useState({})
@@ -86,9 +87,8 @@ function page() {
             <input onClick={handleSubmit} type="submit" name="submit" defaultValue="Giriş" />
           </div>
           {/* Forget Password */}
-          <a href="#" className="forget">
-            Şifremi unuttum
-          </a>
+          <Link href="/register" className={"mr-5"}> Hesabın yok mu?</Link>
+          <Link href="/" >Anasayfaya dön</Link>
           {/* Forget Password */}
 
         </div>

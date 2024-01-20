@@ -70,3 +70,4 @@ C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Entity\obj\Debug\net7.0\Bri
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Entity\obj\Debug\net7.0\refint\BrightAkademi.Entity.dll
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Entity\obj\Debug\net7.0\BrightAkademi.Entity.pdb
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Entity\obj\Debug\net7.0\ref\BrightAkademi.Entity.dll
+C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Entity\obj\Debug\net7.0\BrightAkademi.Entity.sourcelink.json

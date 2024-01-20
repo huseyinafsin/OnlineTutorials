@@ -112,3 +112,4 @@ C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Data\obj\Debug\net7.0\refin
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Data\obj\Debug\net7.0\BrightAkademi.Data.pdb
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Data\obj\Debug\net7.0\BrightAkademi.Data.genruntimeconfig.cache
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Data\obj\Debug\net7.0\ref\BrightAkademi.Data.dll
+C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Data\obj\Debug\net7.0\BrightAkademi.Data.sourcelink.json

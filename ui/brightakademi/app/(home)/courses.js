@@ -103,7 +103,7 @@ export default function Courses() {
                             <span>₺{course.price}</span>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
+                        <a href="/register" className="border-btn border-btn2">
                           Kayıt Ol
                         </a>
                       </div>

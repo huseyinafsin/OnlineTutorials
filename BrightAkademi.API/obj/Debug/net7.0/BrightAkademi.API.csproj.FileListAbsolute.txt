@@ -515,3 +515,4 @@ C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.API\bin\Debug\net7.0\Bright
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.API\obj\Debug\net7.0\BrightAkademi.API.csproj.CopyComplete
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.API\obj\Debug\net7.0\BrightAkademi.API.genruntimeconfig.cache
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.API\obj\Debug\net7.0\ref\BrightAkademi.API.dll
+C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.API\obj\Debug\net7.0\BrightAkademi.API.sourcelink.json

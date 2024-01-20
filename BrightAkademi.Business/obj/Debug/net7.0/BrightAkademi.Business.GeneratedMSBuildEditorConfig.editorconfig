@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BrightAkademi.Business
 build_property.ProjectDir = C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Business\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

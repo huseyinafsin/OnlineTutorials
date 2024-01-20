@@ -107,9 +107,9 @@ export default function SuperAdminScreen() {
                   dashboard.lastUsers !=null ? <table id="example2" className="table table-bordered table-hover">
                     <thead>
                       <tr>
-                        <th>Kullanıcı adı</th>
+                        <th>Kullanıcı</th>
                         <th>Şifre</th>
-                        <th>Aktiflik</th>
+                        {/* <th>Aktiflik</th> */}
                       </tr>
                     </thead>
                     <tbody>
@@ -117,9 +117,9 @@ export default function SuperAdminScreen() {
                         dashboard.lastUsers.map((user, index) => {
                           return (
                             <tr key={index}>
-                              <td><p style={{ whiteSpace: "nowrap" }}>{user.username}</p></td>
+                              <td><p style={{ whiteSpace: "nowrap" }}>{user.firstname+" "+ user.lastname}</p></td>
                               <td><p style={{}}>****************</p></td>
-                              <td>
+                              {/* <td>
                                 <div className="form-group">
                                   <div className="custom-control custom-switch custom-switch-off-danger custom-switch-on-success">
                                     <input
@@ -134,7 +134,7 @@ export default function SuperAdminScreen() {
                                     </label>
                                   </div>
                                 </div>
-                              </td>
+                              </td> */}
                             </tr>
                           )
                         })

@@ -64,3 +64,4 @@ C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Shared\obj\Debug\net7.0\Bri
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Shared\obj\Debug\net7.0\refint\BrightAkademi.Shared.dll
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Shared\obj\Debug\net7.0\BrightAkademi.Shared.pdb
 C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Shared\obj\Debug\net7.0\ref\BrightAkademi.Shared.dll
+C:\Users\husey\Desktop\5\BrightAkademi\BrightAkademi.Shared\obj\Debug\net7.0\BrightAkademi.Shared.sourcelink.json
